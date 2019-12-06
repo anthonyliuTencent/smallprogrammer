@@ -9,13 +9,15 @@
     <img v-lazy="image" style="width: 320px;"/>
   </van-swipe-item>
   </van-swipe>
+  <van-divider />
+  <div>广告位急招租！</div>
   <van-contact-card type="edit" name="程莹" tel="18819322452" :editable="false"/>
 </div>
 </template>
 <script>
-import { Button, NoticeBar, ContactCard, Swipe, SwipeItem } from 'vant';
+import { Button, NoticeBar, ContactCard, Swipe, SwipeItem, Divider } from 'vant';
 import Vue from 'vue'
-Vue.use(Button).use(NoticeBar).use(ContactCard).use(Swipe).use(SwipeItem)
+Vue.use(Button).use(NoticeBar).use(ContactCard).use(Swipe).use(SwipeItem).use(Divider);
 export default {
   name: 'App',
   data() {

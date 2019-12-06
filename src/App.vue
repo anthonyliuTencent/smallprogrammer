@@ -1,14 +1,34 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+<div>
+  <van-notice-bar
+  text="热烈祝贺anthonyliu的小程序开通。。。。。请大家以后多多光照！"
+  left-icon="volume-o"
+/>
+  <van-swipe :autoplay="3000" indicator-color="white">
+    <van-swipe-item v-for="(image, index) in images" :key="index">
+    <img v-lazy="image" style="width: 320px;"/>
+  </van-swipe-item>
+  </van-swipe>
+  <van-contact-card type="edit" name="程莹" tel="18819322452" :editable="false"/>
+</div>
 </template>
-
 <script>
+import { Button, NoticeBar, ContactCard, Swipe, SwipeItem } from 'vant';
+import Vue from 'vue'
+Vue.use(Button).use(NoticeBar).use(ContactCard).use(Swipe).use(SwipeItem)
 export default {
-  name: 'App'
+  name: 'App',
+  data() {
+    return {
+      images: [
+        '/static/image/banner.jpg'
+      ]
+    }
+  }
+  // template: `<van-button>按钮</van-button>`
+  // // template: `<button>按钮</button>`
 }
+// vant.Toast('提示');
 </script>
 
 <style>

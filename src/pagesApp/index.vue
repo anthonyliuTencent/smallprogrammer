@@ -1,7 +1,13 @@
 <template>
   <div id="bgvid1" >
-    <div class="wrapper"></div>
-    <div class="iphone">
+    <div class="wrapper" style="height:  90vh;"></div>
+    <div style=" position: absolute;
+    top: 12px;
+  background-image: url('../../static/image/iphone.png');
+  margin-right: auto;
+  margin-left: auto;
+  background-size: contain;
+  width: 15.75rem;height: 22.245rem;">
         <van-swipe :autoplay="3000" style="width: 7.75rem;
     height: 17.245rem;
     position: absolute;
@@ -16,7 +22,7 @@
       class="qrcode"
       style="position: absolute; overflow: visible; text-align: center; color: white; font-size: 15px; font-weight: bold;"
     >
-      <div id="word" style="margin-top:30px;font-size: 20px;">海量热门小说,超快更新,全部免费！</div>
+      <div id="word" style="font-size: 20px;">海量热门小说,超快更新,全部免费！</div>
       <div style=" display: flex;justify-content: center;">
         <div>
           <img style="    width: 150px;height: 150px;"
@@ -80,17 +86,10 @@ export default {
 
   margin-right: auto;
   margin-left: auto;
-  height:  92vh;
   background-repeat: no-repeat;
 }
 .iphone {
-        position: absolute;
-    top: 12px;
-  background-image: url("../../static/image/iphone.png");
-  margin-right: auto;
-  margin-left: auto;
-  background-size: contain;
-  width: 15.75rem;height: 22.245rem;
+
 }
 /* #bgvid1{
         width:100%;

@@ -20,5 +20,17 @@
     <link rel="stylesheet" href="./static/css/home.css">
     <body>
     <div id="app"></div>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https'){
+          bp.src = 'http://data.zz.baidu.com/urls?site=https://mydear.site&token=IzNySVVUWSZapp4z';
+      }
+      else{
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
   </body>
 </html>

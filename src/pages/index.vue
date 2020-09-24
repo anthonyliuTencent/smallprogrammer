@@ -1,6 +1,6 @@
 <template>
   <div id="bgvid1" >
-    <div class="wrapper" style="750px"></div>
+    <div class="wrapper" style="height:750px"></div>
     <div class="iphone" style="width: 525px;
   height: 743px;">
         <van-swipe :autoplay="3000" style="    width: 260px;

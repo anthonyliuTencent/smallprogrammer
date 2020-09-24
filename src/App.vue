@@ -1,63 +1,41 @@
 <template>
-  <div class="wrapper">
-    <div
-      class="qrcode"
-      style="position: absolute; top:0; text-align: center; color: white; font-size: 15px; font-weight: bold;"
-    >
-      <div id="word">海量热门小说,超快更新,全部免费！</div>
-      <div style=" display: flex;justify-content: center;">
-        <div style="margin-left: 30px;">
-          <img
-            src="../static/image/programm.jpg"
-            alt="休息天地小程序"
-          />
-          <p style="color:#000000">小程序扫码搜索直接看</p>
-        </div>
-      </div>
-    </div>
+  <div class="box">
+    <router-view v-if="showPage == 1" name="m"></router-view>
+    <router-view v-else name="pc"></router-view>
+    <Foot></Foot>
   </div>
 </template>
+
 <script>
-import {
-  Button,
-  NoticeBar,
-  ContactCard,
-  Swipe,
-  SwipeItem,
-  Divider
-} from 'vant';
-import Vue from 'vue';
-Vue.use(Button)
-  .use(NoticeBar)
-  .use(ContactCard)
-  .use(Swipe)
-  .use(SwipeItem)
-  .use(Divider);
+import Foot from './components/foot.vue'
 export default {
-  name: 'App',
-  data() {
-    return {
-      images: ['/static/image/banner.jpg']
-    };
+  components: {
+    Foot
+  },
+  methods: {
+    _isMobile() {
+      let flag = navigator.userAgent.match(
+        /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+      );
+      return flag;
+    }
+  },
+
+  created() {
+    if (this._isMobile()) {
+      this.showPage = 1;
+    } else {
+      this.showPage = 2;
+    }
   }
-  // template: `<van-button>按钮</van-button>`
-  // // template: `<button>按钮</button>`
 };
-// vant.Toast('提示');
 </script>
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-.wrapper {
-  background-image: url("../static/image/cover.jpeg");
-  background-color: #000000;
-  margin-right: auto;
-  margin-left: auto;
+
+<style scoped>
+.box {
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#e66465, #9198e5);
 }
 </style>

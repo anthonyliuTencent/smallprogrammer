@@ -1,15 +1,19 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import index from '../pages/index.vue';
+import mindex from '../pagesApp/index.vue';
+Vue.use(VueRouter);
 
-Vue.use(Router)
-
-export default new Router({
+export default new VueRouter({
+  mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      components: {
+        default: index,
+        pc: index,
+        m: mindex
+      }
     }
   ]
-})
+});

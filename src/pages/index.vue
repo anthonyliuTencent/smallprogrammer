@@ -3,6 +3,13 @@
     <div class="wrapper" style="height:750px"></div>
     <div class="iphone" style="width: 525px;
   height: 743px;">
+        <!-- <van-search
+    v-model="value"
+    show-action
+    placeholder="请输入搜索关键词"
+    @search="onSearch"
+    @cancel="onCancel"
+  /> -->
         <van-swipe :autoplay="3000" style="    width: 260px;
     height: 540px;
     position: absolute;
@@ -37,7 +44,8 @@ import {
   ContactCard,
   Swipe,
   SwipeItem,
-  Divider
+  Divider,
+  Search
 } from 'vant';
 import Vue from 'vue';
 Vue.use(Button)
@@ -45,7 +53,8 @@ Vue.use(Button)
   .use(ContactCard)
   .use(Swipe)
   .use(SwipeItem)
-  .use(Divider);
+  .use(Divider)
+  .use(Search)
 export default {
   name: 'App',
   data() {

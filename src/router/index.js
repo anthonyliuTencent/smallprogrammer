@@ -2,6 +2,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import index from '../pages/index.vue';
 import mindex from '../pagesApp/index.vue';
+import main from '../pages/main.vue'
+import minmain from '../pagesApp/main.vue'
 Vue.use(VueRouter);
 
 export default new VueRouter({
@@ -13,6 +15,14 @@ export default new VueRouter({
         default: index,
         pc: index,
         m: mindex
+      }
+    },
+    {
+      path: '/main',
+      components: {
+        default: index,
+        pc: main,
+        m: minmain
       }
     }
   ]

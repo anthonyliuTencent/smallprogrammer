@@ -1,17 +1,12 @@
 <template>
-  <div class="box">
+  <div>
     <router-view v-if="showPage == 1" name="m"></router-view>
     <router-view v-else name="pc"></router-view>
-    <Foot></Foot>
   </div>
 </template>
 
 <script>
-import Foot from './components/foot.vue'
 export default {
-  components: {
-    Foot
-  },
   methods: {
     _isMobile() {
       let flag = navigator.userAgent.match(
@@ -32,10 +27,4 @@ export default {
 </script>
 
 <style scoped>
-.box {
-  padding-bottom: 20px;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(#e66465, #9198e5);
-}
 </style>

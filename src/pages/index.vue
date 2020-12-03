@@ -1,7 +1,7 @@
 <template>
-  <div class="box" >
+  <div class="box" id="pc-pages">
     <div class="wrapper" style="height:750px"></div>
-    <div class="iphone" style="width: 525px;height: 743px;top:16px;">
+    <div class="iphone" style="width: 525px;height: 743px;top:16px;margin-left: -30px;">
         <van-search
     v-model="value"
     background="#e66465"
@@ -12,6 +12,7 @@
     :clearable = false
     placeholder="剑来"
     @search="onSearch"
+    @focus="onFocus"
   ><template #action>
     <van-button @click="onSearch" type="info" size="small">搜索</van-button>
   </template>
@@ -38,16 +39,50 @@
         <div style="margin-left: 30px;">
           <img
             src="../../static/image/programm.jpg"
-            alt="休息天地小程序"
+            alt="小雷看书小程序"
           />
           <p>小程序扫码搜索直接看</p>
         </div>
       </div>
+      <!-- <div id="popup">asdasd</div> -->
     </div>
+
+      <div id= "searchArea" v-show="show" style="height: auto;width: 300px;padding: 36px 8px 0;padding-top: 38px;
+          left: 43%;
+    top: 62px;
+    position: absolute;
+    z-index: 102;
+    font-weight: bold;
+    background:url(https://resource.mhxk.com/kanman_pc/static/images/comm/bg-cat-main.png) no-repeat top;no-repeat;
+    background-size: 310px auto;">
+            <div class="search-inner-main">
+              <van-icon name="close" id="floatHide" size ="20" @click="show=false"/>
+              <div class="search-hot">
+                <div id="searchbanner" v-show="noData">
+                  <p class="search-no-info acgn-hide acgn-tac" id="J_noHotSearch">没有搜索到结果</p>
+                  <ul class="search-list" id="J_hotSearch">
+                  </ul>
+                </div>
+
+                <div id="hotbanner" style="" v-show="!noData">
+                  <p class="search-no-info acgn-hide acgn-tac">热门搜索</p>
+                  <ul class="search-list">
+
+                    <li @click="goTo(item.book_id)" class="js_hot_list search-item" v-for="(item, index) in bookArray" :key="index">
+                      <div class="item-text">
+                        <p class="name imp">{{index+1}}. {{item.book_name}}</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
     <Foot></Foot>
   </div>
 </template>
 <script>
+import Vue from 'vue';
 import {
   Button,
   NoticeBar,
@@ -55,10 +90,12 @@ import {
   Swipe,
   SwipeItem,
   Divider,
-  Search
+  Search,
+  Icon,
+  Dialog
 } from 'vant';
-import Vue from 'vue';
-import { searchCgi } from '../assets/api'
+import router from '../router'
+import { searchCgi, getRecordBook } from '../assets/api'
 import Foot from '../components/foot.vue'
 Vue.use(Button)
   .use(NoticeBar)
@@ -67,6 +104,8 @@ Vue.use(Button)
   .use(SwipeItem)
   .use(Divider)
   .use(Search)
+  .use(Icon)
+  .use(Dialog)
 export default {
   name: 'App',
   components: {
@@ -74,7 +113,10 @@ export default {
   },
   data() {
     return {
+      show: false,
       value: '',
+      noData: false,
+      bookArray: [],
       images: [
         '/static/image/wechat1.jpeg',
         '/static/image/wechat2.jpeg',
@@ -84,17 +126,39 @@ export default {
       ]
     };
   },
+  async mounted() {
+    const { data } = await getRecordBook(this.value)
+    this.bookArray = data.newBook.slice(0, 10);
+  },
   methods: {
-    onSearch() {
-      searchCgi(this.value)
+    async onSearch() {
+      if (!this.value) {
+        Dialog.alert({title: '温馨提示',
+          message: '请输入您要查找的书名或者作者'})
+        this.show = false
+        return
+      }
+      const { data } = await searchCgi(this.value)
+      if (data.categoryArray && data.categoryArray.length > 0) {
+        this.show = true
+        this.noData = false
+        this.bookArray = data.categoryArray
+      } else {
+        this.noData = true
+      }
+      // router.push({ path: 'main', query: data.categoryArray })
+    },
+    goTo (bookId) {
+      console.log('bookId is:', bookId)
+      router.push({ path: 'main', query: {book_id: bookId} })
+    },
+    onFocus () {
+      this.show = true
     },
     onClear() {
-      console.log('this.value is:', this.value)
       this.value = ''
     }
   }
-  // template: `<van-button>按钮</van-button>`
-  // // template: `<button>按钮</button>`
 };
 // vant.Toast('提示');
 </script>
@@ -131,7 +195,7 @@ export default {
   height: 743px;
 }
 .van-search {
-  width:450px;
+  width:400px;
 }
 .van-field__left-icon .van-icon, .van-field__right-icon .van-icon  {
   font-size: 20px;
@@ -141,6 +205,34 @@ export default {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(#e66465, #9198e5);
+}
+
+#floatHide.van-icon.van-icon-close {
+  padding:10px;
+  float: right
+}
+.search-inner-main {
+    padding: 8px 0;
+    border: 1px solid #FFB5C3;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 1px 4px 0 #FFD1D8 inset;
+    -moz-box-shadow: 0 1px 4px 0 #FFD1D8 inset;
+    box-shadow: inset 0 1px 4px 0 #FFD1D8;
+}
+
+.search-inner-main {
+    padding: 8px 0;
+    border: 1px solid #FFB5C3;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 1px 4px 0 #FFD1D8 inset;
+    -moz-box-shadow: 0 1px 4px 0 #FFD1D8 inset;
+    box-shadow: inset 0 1px 4px 0 #FFD1D8;
 }
 /* #bgvid1{
         width:100%;

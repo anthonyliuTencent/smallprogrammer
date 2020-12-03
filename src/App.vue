@@ -1,12 +1,17 @@
 <template>
   <div>
     <router-view v-if="showPage == 1" name="m"></router-view>
-    <router-view v-else name="pc"></router-view>
+    <router-view v-else :name="path"></router-view>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      path: 'pc'
+    }
+  },
   methods: {
     _isMobile() {
       let flag = navigator.userAgent.match(
@@ -20,6 +25,8 @@ export default {
     if (this._isMobile()) {
       this.showPage = 1;
     } else {
+      this.path = 'pc'
+      console.log('this:', this.$router.currentRoute)
       this.showPage = 2;
     }
   }

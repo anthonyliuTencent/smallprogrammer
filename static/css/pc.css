@@ -1,0 +1,1306 @@
+html { font-size: 100px; }
+body, div { margin: 0 auto; padding: 0; font-size: 0.14rem; }
+body { background: #F6F9FC; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: #FF6600; }
+.C-Fo-Zuo a:visited { color: #999; }
+.pointer { cursor: pointer; }
+i { font-style: normal; font-size: 0.15rem; }
+h1 { display: inline; font-weight: bold; font-size: 0.14rem; }
+/*h2 { display: inline; font-weight: bold; font-size: 0.12rem; color: #ff6600; }
+h4 { display: inline; font-weight: bold; font-size: 0.14rem; }
+h5 { display: inline; font-weight: bold; font-size: 0.16rem; }*/
+/*a:hover { color: #ff6600; text-decoration: underline; position: relative; left: 1px; top: 1px; }*/
+/*滚动条*/
+::-webkit-scrollbar { width: 15px; }
+::-webkit-scrollbar-track { background-color: transparent; }
+/* 滚动条的滑轨背景颜色 */
+::-webkit-scrollbar-thumb { background-color: #ccc; border-radius: 3px; }
+/* 滑块颜色 */
+::-webkit-scrollbar-thumb:hover { background-color: #999; }
+/* 滑轨两头的监听按钮颜色 */
+::-webkit-scrollbar-corner { background-color: transparent; }
+/* 横向滚动条和纵向滚动条相*/
+
+
+
+#focus ul { height: 2.6rem; position: absolute; }
+#focus ul li { float: left; width: 2.6rem; height: 1.67rem; overflow: hidden; position: relative; background: #000; }
+#focus ul li div { position: absolute; overflow: hidden; }
+
+/*----------------------------------虚化代码开始----------------------------------*/
+.XhDiv { position: relative; top: 0px; width: 100%; }
+.Xh-bg { position: absolute; left: 0px; top: 0px; width: 100%; height: 4.8rem; overflow: hidden; }
+
+#imgblur { width: 100%; z-index: -1; }
+/*
+//testb.faloo.com/images/webpage/
+//s.faloo.com/novel2/
+*/
+/*背景是白色95透明 渐变到白色85透明度*/
+.XhDiv .Xh-bg .mengCeng1 { width: 100%; height: 0.75rem; border: none; float: left; /*background-image: url(//s.faloo.com/novel2/novelRead/readBg/bg001_1-95-85.png?20200226); background-size: 100% 100%; background-repeat: no-repeat;*/ }
+/*背景是白色85透明 渐变到白色95透明度*/
+.XhDiv .Xh-bg .mengCeng2 { width: 100%; height: 1.55rem; border: none; float: left; /*background-image: url(//s.faloo.com/novel2/novelRead/readBg/bg001_2-85-95.png?20200226); background-size: 100% 100%; background-repeat: no-repeat;*/ }
+/*背景是白色95透明 渐变到纯灰色无透明度*/
+.XhDiv .Xh-bg .mengCeng3 { width: 100%; height: 2.5rem; border: none; float: left; /*overflow: hidden; background-image: url(//s.faloo.com/novel2/novelRead/readBg/bg001_3_b95_h.png?20200226); background-size: 100% 2.5rem;*/ }
+
+@media only screen and (max-device-width: 780px) {
+body { width: 1200px; }
+.XhDiv { width: 1200px; }
+.Xh-img-jb { background: none; }
+}
+/*----------------------------------虚化代码End----------------------------------*/
+
+/*----------------------------------头部代码开始----------------------------------*/
+.top { width: 100%; background: none; min-width: 12rem; }
+/*手机端*/
+@media only screen and (max-device-width: 780px) {
+/*底部样式*/
+.bottom { width: 12rem; }
+}
+
+/*----------------------------------头部代码到此结束华丽的分割线----------------------------------*/
+
+
+
+
+
+
+
+/*定义字体大小及颜色*/
+.fs14 { font-size: 0.14rem; }
+.fs15 { font-size: 0.15rem; }
+.fs17 { font-size: 0.17rem; }
+.fs23 { font-size: 0.23rem; }
+.fs35 { font-size: 0.35rem; }
+.fs47 { font-size: 0.47rem; }
+.colorHei { color: #333333; }
+.colorHui { color: #666666; }
+.colorQianHui { color: #999999; }
+.colorChen { color: #FF6600; }
+.colorLv { color: #038139; }
+.colorLv1 { color: #09843E; }
+.colorShihui { color: #70859A; }
+.colorFenhong { color: #FA4E85; }
+.colorQianlan { color: #1EA4EC; }
+.colorZi { color: #9D88D2; }
+.colorXiaolv { color: #5EB562; }
+.colorTuhuang { color: #E0B141; }
+.colorHongcheng { color: #FF6147; }
+.backColorFenhong { background: linear-gradient(169deg,rgba(243,93,64,1) 0%,rgba(244,48,94,1) 72%); }
+.backColorQianlan { background: linear-gradient(169deg,rgba(80,184,240,1) 0%,rgba(30,164,236,1) 71%); }
+.backColorZi { background: linear-gradient(169deg,rgba(183,162,234,1) 0%,rgba(157,136,210,1) 72%); }
+.backColorXiaolv { background: linear-gradient(169deg,rgba(100,200,105,1) 0%,rgba(94,181,98,1) 72%); }
+.backColorTuhuang { background: linear-gradient(169deg,rgba(231,187,82,1) 0%,rgba(224,177,65,1) 72%); }
+.fontweight { font-weight: bold; }
+.fontoblique { font-style: oblique; padding: 0 0.1rem; }
+/*定义字体大小及颜色End*/
+
+/*margin/padding边距-位置*/
+.mgLeft20 { margin-left: 0.2rem; }
+.mgLeft15 { margin-left: 0.15rem; }
+.txtCenter { text-align: center; }
+.mgTop20 { margin-top: 0.125rem; }
+.mgButton20 { margin-bottom: 0.125rem; }
+
+.mgTop30 { margin-top: 0.3rem; }
+.pdTop13 { padding-top: 0.13rem; }
+.pdLeft10 { padding-left: 0.1rem; }
+.pdleftAndright20 { padding-left: 0.2rem; padding-right: 0.2rem; }
+/*margin边距End*/
+
+/*边框阴影*/
+.bodyBorderShadow { box-shadow: 0 0 0.1rem #e7e7e7; }
+.bodyBorderShadowHei { box-shadow: 0 0 0.1rem #4d4d4d; }
+/*边框阴影End*/
+
+/*遮罩*/
+.zheZhao { position: fixed; top: 0; right: 0; bottom: 0; left: 0; overflow: hidden; outline: 0; -webkit-overflow-scrolling: touch; background-color: rgb(0, 0, 0); filter: alpha(opacity=60); background-color: rgba(0, 0, 0, 0.5); z-index: 998; text-align: center; display: none; }
+/*取消浮动*/
+.clearfix:before, .row:before, .form-group:before { display: table; content: " "; }
+.clearfix:after, .row:after, .form-group:after { clear: both; display: table; content: " "; }
+
+/*数字样式*/
+.SZspan { border: 0.01rem solid #FF6600; color: #FF6600; padding: 0 0.03rem; border-radius: 0.04rem; font-size: 0.13rem; font-weight: bold; margin: 0 0.01rem; }
+.Num { width: 0.2rem; height: 0.2rem; line-height: 0.2rem; text-align: center; background: rgba(255,102,0,1); border-radius: 0.02rem; position: absolute; left: 0; top: 0.05rem; color: #fff; font-size: 0.14rem; }
+.Num1 { width: 0.2rem; height: 0.2rem; line-height: 0.2rem; text-align: center; background: rgba(255,102,0,1); border-radius: 0.02rem; position: absolute; left: 0; top: 0.07rem; color: #fff; font-size: 0.14rem; }
+.Num1Hei { width: 0.2rem; height: 0.2rem; line-height: 0.2rem; text-align: center; background: #808080; border-radius: 0.02rem; position: absolute; left: 0; top: 0.07rem; color: #fff; font-size: 0.14rem; }
+
+.Num2 { width: 0.2rem; height: 0.2rem; line-height: 0.2rem; text-align: center; background: rgba(255,102,0,1); border-radius: 0.02rem; position: absolute; left: 0; top: 0.11rem; color: #fff; font-size: 0.14rem; }
+.Num2Hei { width: 0.2rem; height: 0.2rem; line-height: 0.2rem; text-align: center; background: #808080; border-radius: 0.02rem; position: absolute; left: 0; top: 0.11rem; color: #fff; font-size: 0.14rem; }
+
+/*数字样式*/
+
+/*通用标题div*/
+.TitleDiv { width: 100%; height: 0.4rem; /* background: linear-gradient(180deg,#f4fff4 0%,rgba(255,255,255,1) 100%); */ background: url(//s.faloo.com/novel2/CategoryIndex/titleback.jpg) no-repeat; background-size: 12rem 100%; font-size: 0.17rem; position: relative; text-align: center; }
+.TitleDiv span { position: relative; bottom: -0.1rem; }
+.zpxg h2,.muluh2 h2 { position: absolute;bottom: 0.1rem;left: 0.24rem;text-align: center;width: 100%;font-size: 0.17rem;color: #333333;margin: 0;padding: 0;font-weight: inherit;}
+
+.TitleDiv .left { position: absolute; bottom: 0.1rem; left: 0.24rem; }
+.TitleDiv .right { position: absolute; bottom: 0; right: 0.26rem; }
+.TitleDiv .right1 { bottom: 0; }
+.TitleDiv .shuping { position: absolute; bottom: 0.1rem; left: 0.24rem; }
+.TitleDiv1 { width: 2.42rem; height: 0.4rem; line-height: 0.38rem; padding-left: 0.16rem; /* background: linear-gradient(180deg,#f4fff4 0%,rgba(255,255,255,1) 100%); */ background: url(//s.faloo.com/novel2/CategoryIndex/titleback.jpg) no-repeat; background-size: 12rem 100%; font-size: 0.17rem; color: #333333; position: relative; border-left: 0.01rem solid #ededed; border-top: 0.01rem solid #ededed; border-right: 0.01rem solid #ededed; }
+.TitleDiv_noborder { border: 0; }
+.quanbu { color: #666666; position: absolute; right: 0.1rem; font-size: 0.14rem; }
+/*通用标题div   End*/
+
+/*特殊div样式*/
+.XuxianDiv { width: 100%; border-bottom: 0.01rem dashed #CCCCCC; }
+.lvdian { width: 0.04rem; height: 0.2rem; background: linear-gradient(0deg,rgba(28,177,92,1) 0%,rgba(43,211,115,1) 100%); border-radius: 0.02rem; position: absolute; left: 0.06rem; top: 0.1rem; }
+.divLV { width: 0.04rem; height: 0.2rem; background: #09843E; position: absolute; top: 0.1rem; }
+.TPbg01 { background: url(//s.faloo.com/novel2/Index/toupiao01.png) no-repeat right 0.1rem bottom #F6F9FC; }
+.TPbg02 { background: url(//s.faloo.com/novel2/Index/toupiao02.png) no-repeat right 0.1rem bottom #F6F9FC; }
+.TPbg03 { background: url(//s.faloo.com/novel2/Index/toupiao03.png) no-repeat right 0.1rem bottom #F6F9FC; }
+.DivBai { width: 8.8rem; background: #FFFFFF; height: 0.2rem; }
+.DivVip { width: 8.8rem; height: 0.42rem; line-height: 0.42rem; color: #FF6600; font-size: 0.15rem; text-align: center; background: #F6F9FC; }
+.viph2 h2 { font-size:inherit; font-weight:inherit;color:inherit;}
+.DingyueBtn { width: 1.53rem; height: 0.3rem; line-height: 0.32rem; font-size: 0.14rem; text-align: center; color: #09843E; border: 0.01rem solid #09843E; border-radius: 0.16rem; float: right; margin-right: 0.1rem; cursor: pointer; }
+.VipBtn { width: 0.95rem; height: 0.32rem; line-height: 0.32rem; font-size: 0.14rem; text-align: center; color: #FFFFFF; background: #FF6600; border-radius: 0.16rem; float: right; cursor: pointer; }
+/*特殊div样式 End*/
+
+/*图片样式*/
+.imgcss { width: 100%; border-radius: 0.05rem; }
+.huoimg { position: relative; top: 0.02rem; right: -0.1rem; width: 0.26rem; height: 0.32rem; }
+.vipimg { position: relative; top: 0.03rem; left: 0.2rem; width: 0.26rem; height: 0.23rem; }
+.xinbiaoimg { position: relative; top: 0.08rem; left: 0.1rem; width: 0.15rem; height: 0.26rem; }
+.rentouOne { position: relative; top: 0.03rem; right: 0.06rem; width: 0.18rem; height: 0.18rem; }
+.rentouTwo { position: relative; top: 0.03rem; padding-right: 0.05rem; width: 0.18rem; height: 0.18rem; }
+.A_QYimg { position: absolute; top: -0.09rem; right: -0.16rem; width: 0.68rem; height: 0.68rem; z-index: 2; }
+.FLSFimg { position: absolute; right: 0.05rem; bottom: 0.65rem; width: 0.86rem; height: 0.79rem; }
+.XZimg { position: relative; top: 0.06rem; width: 0.34rem; height: 0.33rem; }
+.APPMa { width: 0.9rem; height: 0.9rem; border-radius: 0.04rem; position: relative; top: 0.1rem; }
+.PFimg { width: 0.6rem; height: 0.6rem; }
+.mypfimg { width: 0.55rem; height: 0.53rem; position: absolute; right: 0; }
+.xiaolianimg { width: 100%; height: 100%; }
+.chaofengimg { width: 0.18rem; height: 0.16rem; position: relative; top: 0.02rem; }
+.yjImg { width: 100%; height: 100%; border-radius: 50%; }
+.hgimg { width: 0.23rem; height: 0.22rem; position: absolute; top: 0.04rem; left: 0; }
+.shangimg { width: 0.24rem; height: 0.24rem; position: absolute; top: 0.06rem; left: -0.02rem; }
+.shangimgTs { width: 0.24rem; height: 0.24rem; position: relative; top: 0.06rem; left: -0.02rem; }
+.AuthorImg { width: 0.8rem; height: 0.79rem; border-radius: 50%; }
+.ThreeContentImg { width: 0.24rem; height: 0.24rem; position: relative; top: 0.07rem; }
+.sjImg { width: 0.06rem; height: 0.07rem; position: relative; top: -0.01rem; left: 0.04rem; }
+.QTImg { width: 0.66rem; height: 0.94rem; border-radius: 0.04rem; position: relative; left: 0.27rem; }
+.dzxhimg { width: 0.6rem; height: 0.85rem; border-radius: 0.04rem; }
+.PLTouImg { width: 0.4rem; height: 0.4rem; border-radius: 50%; }
+.PLTouImg-Send { width: 0.4rem; height: 0.4rem; border-radius: 50%; position: relative; top: 0.07rem; }
+.zdjhimg { width: 0.54rem; height: 0.2rem; position: relative; top: 0.05rem; }
+.hfimg { width: 0.2rem; height: 0.19rem; position: relative; top: 0.05rem; }
+.dzimg { width: 0.2rem; height: 0.19rem; position: relative; top: 0.02rem; }
+.yousjImg { width: 0.1rem; height: 0.11rem; position: relative; left: 0.05rem; }
+/*图片样式End*/
+
+/*按钮样式*/
+.TPBtn { width: 1.54rem; height: 0.35rem; line-height: 0.35rem; color: #FFF; font-size: 0.23rem; cursor: pointer; background: linear-gradient(-14deg,rgba(5,155,69,1),rgba(28,177,92,1)); border-radius: 0.18rem; }
+.TPBtn.disabled { cursor: not-allowed; background: #ccc; }
+/*按钮样式 End*/
+
+/*Div表格*/
+.DivTable { width: 8.8rem; background: #FFFFFF; overflow: hidden; }
+.DivTr { width: 100%; height: 0.45rem; border-bottom: 0.01rem dashed #CCCCCC; }
+.DivTr:last-child { border-bottom:none;}
+.DivTd { width: 33.3%; height: 0.45rem; line-height: 0.45rem; float: left; font-size: 0.14rem; color: #666666; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.DivTd.lv { line-height: 0.22rem; padding: 0.09rem 0; color: #038139; }
+    .DivTd.lv span { color: #ff6600; }
+.DivTd2 { width: 100%; height: 0.45rem; line-height: 0.45rem; font-size: 0.14rem; color: #666666; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/*Div表格 End*/
+
+/*分卷列表*/
+.VolumeList{background-color:#fff;}
+.VolumeList .DivTable .DivTr:last-child{border-bottom:none;}
+/*分卷列表 End*/
+
+
+/*----------------------------------开启内容代码--------------------------------------------------*/
+/*内容区域第一块样式*/
+.center { width: 100%; min-width: 12.0rem; min-height: 20rem; float: left; overflow: hidden; }
+.C-One { width: 12rem; min-width: 1200px; height: 0.5rem; line-height: 0.5rem; position: relative; }
+
+
+/*小说详情样式*/
+.C-Two { width: 12rem; min-width: 1200px; height: 5.35rem; border-bottom: 0.05rem solid #FFFFFF; position: relative; background-image: url(//s.faloo.com/novel2/novelRead/bg10-100.png); background-size: 100% 5.35rem; }
+.C-Two .Two-Border1 { height: 0.03rem; width: 12.0rem; background: #FFFFFF; position: relative; opacity: 0.8; }
+.C-Two .Two-Border2 { height: 5.0rem; width: 0.03rem; background: #FFFFFF; position: relative; float: left; }
+.C-Two .Two-Border3 { height: 5.0rem; width: 0.03rem; background: #FFFFFF; position: relative; float: right; }
+.Two-Left { width: 9.01rem; height: 5.35rem; float: left; }
+.Two-Left .T-L-One { width: 9.01rem; height: 1rem; }
+.Two-Left .T-L-One .T-L-O-Zuo { width: 7.51rem; height: 1rem; float: left; position: relative; }
+.T-L-O-Z-Box1 { width: 7.51rem; height: 0.7rem; line-height: 0.7rem; overflow: hidden; }
+.T-L-O-Z-Box1 a { padding: 0 0.25rem; font-weight: 400; }
+.T-L-O-Z-Box1 h1 { padding: 0 0 0 0.25rem; font-weight: 400; }
+.T-L-O-Z-Box2 { width: 7.51rem; height: 0.3rem; }
+.Two-Left .T-L-One .T-L-O-You { width: 1.5rem; height: 0.8rem; float: left; text-align: center; position: relative; padding-top: 0.2rem; }
+.Two-Left .T-L-Two { width: 9.01rem; height: 3.65rem; }
+.Two-Left .T-L-Two .T-L-T-Img { width: 2.24rem; height: 3.18rem; float: left; border: 0.02rem solid #fff; border-radius: 0.04rem; position: relative; margin: 0.21rem 0.2rem; }
+.Two-Left .T-L-Two .T-L-T-Content { width: 6.15rem; height: 3.22rem; float: left; margin-top: 0.21rem; }
+.Two-Left .T-L-Two .T-L-T-Content .T-L-T-C-Box1 { width: 6.15rem; height: 2.71rem; overflow-y: auto; position: relative; font-size: 0.14rem; line-height: 0.30rem; color: #666666; text-indent: 2em;}
+.Two-Left .T-L-Two .T-L-T-Content .T-L-T-C-Box1::-webkit-scrollbar { width: 0.08rem; }
+.Two-Left .T-L-Two .T-L-T-Content .T-L-T-C-Box1::-webkit-scrollbar-track { background: #70859a; }
+.Two-Left .T-L-Two .T-L-T-Content .T-L-T-C-Box1::-webkit-scrollbar-thumb { border-radius: 0.04rem; background: #eca97b; }
+.Two-Left .T-L-Two .T-L-T-Content .T-L-T-C-Box1 p { margin:0;padding:0;}
+.Two-Left .T-L-Two .T-L-T-Content .T-L-T-C-Box2 { width: 6.15rem; height: 0.28rem; line-height: 0.26rem; margin-top: 0.22rem; position: relative; }
+.Two-Left .T-L-Two .T-L-T-Content .T-L-T-C-Box2 a:first-child { display: block; float: left; color: #FFFFFF; padding: 0 0.24rem; background: #FF6600; border-radius: 0.14rem; margin-right: 0.1rem; border: 0.01rem solid #ff6600; }
+.Two-Left .T-L-Two .T-L-T-Content .T-L-T-C-Box2 a { display: block; float: left; color: #038139; padding: 0 0.18rem; background: #FFFFFF; border-radius: 0.14rem; margin-right: 0.1rem; border: 0.01rem solid #038139; font-size: 0.14rem; }
+.Two-Left .T-L-Two .T-L-T-Content .T-L-T-C-Box2 img { position: relative; top: 0.02rem; padding-right: 0.1rem; width: 0.16rem; height: 0.14rem; }
+.Two-Left .T-L-Two .T-L-T-Content .T-L-T-C-Box2 .img1 { width: 0.14rem; height: 0.14rem; }
+.Two-Left .T-L-Two .T-L-T-Content .T-L-T-C-Box2 .img2 { width: 0.13rem; height: 0.13rem; }
+.Two-Left .T-L-Three { width: 9.01rem; height: 0.7rem; }
+.Two-Left .T-L-Three .T-L-Th-Box1 { width: 8.47rem; height: 0.5rem; line-height: 0.5rem; background: #F6F9FC; font-size: 0.14rem; }
+.Two-Center { width: 0.03rem; height: 5.35rem; background: #FFFFFF; float: left; position: relative; }
+.Two-Right { width: 2.86rem; height: 5.35rem; float: left; }
+.Two-Right .T-R-Top { width: 2.52rem; margin-left: 0.27rem; height: 2.4rem; border-bottom: 0.01rem dashed #CCCCCC; position: relative; }
+.Two-Right .T-R-Middle { width: 2.52rem; margin-left: 0.27rem; height: 1.8rem; border-bottom: 0.01rem dashed #CCCCCC; }
+.Two-Right .T-R-Bottom { width: 2.52rem; margin-left: 0.27rem; height: 1.13rem; }
+.T-R-T-Box1 { width: 100%; height: 0.6rem; line-height: 0.35rem; text-align: center; font-size: 0.17rem; color: #333333; }
+.T-R-T-Box2 { width: 100%; height: 1.74rem; }
+.T-R-T-B2-Box1 { width: 100%; height: 0.29rem; line-height: 0.29rem; font-size: 0.14rem; }
+.T-R-T-B2-Box1 .LXbq { border: 0.01rem solid #09843E; color: #09843E; border-radius: 0.04rem; padding: 0 0.09rem; font-size: 0.12rem; margin-right: 0.05rem; }
+.T-R-Md-Bobx1 { width: 100%; height: 0.4rem; line-height: 0.4rem; font-size: 0.14rem; color: #666666; }
+.T-R-Md-Bobx1:first-child { padding-top: 0.15rem; position: relative; }
+.T-R-Md-Bobx2 { width: 100%; height: 0.45rem; line-height: 0.45rem; text-align: center; }
+.T-R-B-Box1 { width: 0.9rem; height: 1.13rem; float: left; }
+.T-R-B-Box2 { width: 1.62rem; height: 1.13rem; float: left; }
+.T-R-B-Box3 { width: 1.52rem; height: 0.45rem; line-height: 0.5rem; padding-left: 0.1rem; margin-top: 0.1rem; }
+.T-R-B-Box4 { width: 1.52rem; height: 0.45rem; line-height: 0.4rem; padding-left: 0.1rem; }
+/*小说详情样式End*/
+
+/*内容第三频投票评分*/
+.C-Three { width: 11.48rem; min-width: 1150px; height: 1.89rem; background: #FFFFFF; padding: 0.3rem 0.25rem; border: 0.01rem solid #ededed; }
+.C-Three .C-Thr-Box1 { width: 1.8rem; height: 1.89rem; float: left; }
+.C-Three .C-Thr-Box2 { width: 0.04rem; height: 1.89rem; background: #F6F9FC; float: left; }
+.C-Three .C-Thr-Box3 { width: 2.32rem; height: 1.89rem; background: #F6F9FC; float: right; position: relative; cursor: pointer; }
+.C-Thr-B1-Box1 { width: 100%; height: 0.6rem; text-align: center; }
+.C-Thr-B1-Box2 { width: 100%; height: 0.35rem; line-height: 0.35rem; font-size: 0.17rem; color: #666666; text-align: center; }
+.C-Thr-B1-Box3 { width: 100%; height: 0.6rem; line-height: 0.6rem; font-size: 0.29rem; text-align: center; }
+.C-Thr-B1-Box4 { width: 100%; height: 0.28rem; }
+.C-Thr-B1-B4-Btn { width: 80%; height: 0.28rem; line-height: 0.28rem; border-radius: 0.14rem; text-align: center; font-size: 0.15rem; color: #fff; cursor: pointer; display: block; margin: 0 auto; }
+.C-Thr-B1-B4-Btn:hover { color: #FFFFFF; }
+.C-Thr-B3-Box1 { width: 100%; height: 0.53rem; text-align: center; }
+.C-Thr-B3-Box2 { width: 93%; height: 0.31rem; margin-top: 0.15rem; }
+.C-Thr-B3-Box2-B1 { width: 14%; height: 0.31rem; float: left; padding: 0 3%; }
+.C-Thr-B3-Box3 { width: 100%; height: 0.35rem; line-height: 0.6rem; text-align: center; color: #999999; font-size: 0.14rem; }
+.baiWan { font-size: 0.24rem; position: relative; top: -0.02rem; }
+/*内容第三频投票评分End*/
+
+/*内容第四屏*/ /*这个注释最后解开 去掉现有的背景*/
+.C-Four { width: 12rem; min-width: 1200px; /*height: 45.74rem;*/ background: #F6F9FC; }
+/*内容第四屏矩形左边*/
+.C-Fo-Zuo { width: 9.28rem; /*background: #ffc39b;*/ float: left; }
+/*.C-Fo-Zuo div:first-child{margin-top:0}*/
+/*内容第四屏矩形右边*/
+.C-Fo-You { width: 2.6rem; /*background: #FFFFFF;*/ float: right; }
+.C-Fo-You { width: 2.60rem; /*height: 45.74rem; background: #FFFFFF;*/ float: right; }
+
+/*投票*/
+.C-Fo-Z-Tuopiao { width: 9.28rem; background: #FFFFFF; }
+.C-Fo-Z-Tp-Box1 { width: 8.8rem; padding-bottom: 0.1rem; }
+
+.C-Fo-Z-Tp-B1-Box1 { width: 8.8rem; height: 0.54rem; line-height: 0.54rem; font-size: 0.14rem; color: #999999; text-align: center; }
+.C-Fo-Z-Tp-B1-Box2 { width: 8.8rem; }
+.C-Fo-Z-Tp-B1-Box3 { width: 2.74rem; height: 1.53rem; margin-right: 0.22rem; float: left; background-color: #F6F9FC; cursor: pointer; border: solid 0.02rem #F6F9FC; }
+.C-Fo-Z-Tp-B1-Box3:nth-child(3n) { margin-right: 0rem; }
+.C-Fo-Z-Tp-B1-Box3:first-child { margin-left: 0.01rem; }
+.C-Fo-Z-Tp-B1-Box3:last-child { margin-right: 0rem; }
+.C-Fo-Z-Tp-B1-Box3.select { width: 2.74rem; height: 1.53rem; border-radius: 0.04rem; border: solid 0.02rem #059B45; background-color: #fff; background: url(//s.faloo.com/novel2/Index/voteSelect.png) no-repeat bottom right -0.02rem; }
+.C-Fo-Z-Tp-B1-Box4 { height: 0.75rem; line-height: 0.81rem; background: url(//s.faloo.com/novel2/Index/wzbg.png) no-repeat 0.06rem 0.09rem; background-size: 2.59rem 0.54rem; color: #333333; text-align: center; font-size: 0.17rem; overflow: hidden; padding: 0 0.3rem 0 0.2rem; }
+.C-Fo-Z-Tp-B1-Box3.select .C-Fo-Z-Tp-B1-Box4 { background: url(//s.faloo.com/novel2/Index/wzbgSelect.png) no-repeat 0.06rem 0.09rem; color: #fff; }
+.C-Fo-Z-Tp-B1-Box5 { width: 100%; height: 0.65rem; line-height: 0.65rem; text-align: center; font-size: 0.17rem; color: #999999; }
+.C-Fo-Z-Tp-B1-Box6 { width: 100%; height: 0.35rem; text-align: center; margin-top: 0.2rem; }
+/*投票 End*/
+
+/*作品相关*/
+.C-Fo-Z-Zuoping { width: 9.26rem; background: #FFFFFF; overflow: hidden; border: 0.01rem solid #ededed; }
+.C-Fo-Z-Zp-Box1 { width: 8.8rem; overflow: hidden; }
+.C-Fo-Z-Zp-B1-Box1 { width: 8.8rem; overflow: hidden;  }
+.C-Fo-Z-Zp-B1-Box1_2{max-height: 2.56rem;}
+/*.C-Fo-Z-Zp-B1-Box2 { width: 2.8rem; height: 0.4rem; line-height: 0.4rem; font-size: 0.14rem; color: #666666; background: #FFFFFF; border-radius: 0 0.1rem 0 0.1rem; float: left; margin: 0.2rem 0.2rem 0 0; position: relative; }*/
+.C-Fo-Z-Zp-B1-Box2 { width: 2.78rem; height: 0.4rem; line-height: 0.4rem; font-size: 0.14rem; color: #666666; background: #FFFFFF; border-radius: 0.04rem; float: left; margin: 0.2rem 0.2rem 0 0; position: relative; border: dashed 0.01rem #e5e5e5; }
+.C-Fo-Z-Zp-B1-Box2:nth-child(3n+3) { margin: 0.2rem 0 0 0; }
+.C-Fo-Z-Zp-B1-Box2:last-child { margin: 0.2rem 0 0.2rem 0; }
+.openMore { text-align: center; background: url(//s.faloo.com/novel2/NovelDetail/zhankai.png) no-repeat bottom center; background-size: 0.14rem 0.14rem; height: 0.37rem; margin-bottom: 0.15rem; font-size: 0.16rem; color: #FF6600; cursor: pointer; }
+.closeMore { background: url(//s.faloo.com/novel2/NovelDetail/shouqi.png) no-repeat bottom center; background-size: 0.14rem 0.14rem; }
+/*作品相关End*/
+
+/*目录*/
+.C-Fo-Z-Mulu { width: 9.26rem; background: #FFFFFF; border: 0.01rem solid #ededed; }
+.C-Fo-Z-ML-TitleBox { width: 8.8rem; min-height: 0.4rem; line-height: 0.32rem; font-size: 0.16rem; color: #09843E; text-align: left; }
+.C-Fo-Z-ML-TitleBox h3 { display:inline; font-weight:inherit;font-size:inherit;color:inherit; margin:0; padding:0;}
+.C-Fo-Z-ML-Box1 { width: 8.8rem; height: 0.4rem; line-height: 0.4rem; text-align: center; color: #666666; font-size: 0.14rem; }
+/*目录End*/
+
+/*书评区域*/
+.C-Fo-Z-Shuping { width: 9.26rem; background: #FFFFFF; overflow: hidden; border: 0.01rem solid #ededed; }
+.C-Fo-Z-Shuping-PL { width: 8.8rem; overflow: hidden; }
+.C-Fo-Z-Shuping-PL-Box1 { width: 8.68rem; height: 1.23rem; margin: 0.25rem 0 0 0; float: left; }
+.C-Fo-Z-Shuping-PL-Box1Zuo { width: 0.4rem; height: 1.23rem; float: left; }
+.C-Fo-Z-Shuping-PL-Box1You { width: 8.18rem; height: 1.23rem; float: right; }
+.C-Fo-Z-Shuping-PL-Box1You-B1 { width: 100%; height: 0.22rem; line-height: 0.22rem; font-size: 0.16rem; color: #333333; }
+.C-Fo-Z-Shuping-PL-Box1You-B2 { width: 100%; height: 0.6rem; margin-top: 0.1rem; font-size: 0.14rem; color: #666666; line-height: 0.3rem; display: block; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; }
+.C-Fo-Z-Shuping-PL-Box1You-B3 { width: 100%; height: 0.31rem; line-height: 0.31rem; font-size: 0.14rem; color: #999999; }
+.C-Fo-Z-Shuping-PL-Box1You-B3 span { padding: 0 0.2rem; }
+.C-Fo-Z-Shuping-PL-Box2 { width: 8.68rem; line-height: 0.6rem; font-size: 0.14rem; text-align: center; color: #666666; float: left; }
+.C-Fo-Z-Shuping-Send { width: 8.68rem; height: 4.25rem; margin-top: 0.3rem; }
+.C-Fo-Z-Shuping-Send-B1 { width: 100%; height: 0.5rem; line-height: 0.5rem; }
+.C-Fo-Z-Shuping-Send-B1Z { width: 0.4rem; height: 0.5rem; float: left; }
+.C-Fo-Z-Shuping-Send-B1Y { width: 8.18rem; height: 0.5rem; float: right; }
+.PLTitle { width: 99.9%; height: 93%; border: 0.01rem solid #E6E6E6; border-radius: 0.04rem; }
+.C-Fo-Z-Shuping-Send-B1Y input::-webkit-input-placeholder { padding-left: 0.1rem; font-size: 0.14rem; color: #999999; }
+.C-Fo-Z-Shuping-Send-B1Y input:-moz-placeholder { padding-left: 0.1rem; font-size: 0.14rem; color: #999999; }
+.C-Fo-Z-Shuping-Send-B1Y input:-ms-input-placeholder { padding-left: 0.1rem; font-size: 0.14rem; color: #999999; }
+.C-Fo-Z-Shuping-Send-B2 { width: 8.18rem; height: 2.7rem; float: right; margin-top: 0.2rem; }
+.PLContent { width: 99.3%; height: 97.5%; border: 0.01rem solid #E6E6E6; border-radius: 0.04rem; }
+.C-Fo-Z-Shuping-Send-B2 textarea::-webkit-input-placeholder { padding-left: 0.1rem; line-height: 0.3rem; font-size: 0.14rem; color: #999999; }
+.C-Fo-Z-Shuping-Send-B2 textarea:-moz-placeholder { padding-left: 0.1rem; line-height: 0.3rem; font-size: 0.14rem; color: #999999; }
+.C-Fo-Z-Shuping-Send-B2 textarea:-ms-input-placeholder { padding-left: 0.1rem; line-height: 0.3rem; font-size: 0.14rem; color: #999999; }
+.C-Fo-Z-Shuping-Send-B3 { width: 100%; height: 0.4rem; margin: 0.2rem 0; float: left; }
+.SendBtn { width: 1.5rem; height: 0.4rem; line-height: 0.4rem; text-align: center; border-radius: 0.2rem; background: #FF6600; color: #FFFFFF; font-size: 0.15rem; cursor: pointer; float: right; }
+.XuanChuanBtn { width: 1.1rem; height: 0.38rem; line-height: 0.38rem; text-align: center; border-radius: 0.19rem; background: #FFFFFF; border: 0.01rem solid #09843E; color: #09843E; float: right; font-size: 0.15rem; margin: 0 0.2rem; cursor: pointer; }
+.ChenMo { width: 0.6rem; height: 0.4rem; line-height: 0.4rem; text-align: center; color: #999999; font-size: 0.15rem; float: right; }
+.cmCheck { width: 0.16rem; height: 0.16rem; border: 0.01rem solid #E6E6E6; border-radius: 0.04rem; position: relative; top: 0.03rem; }
+/*书评区域End*/
+
+/*小说切换*/
+.C-Fo-Z-Qiehuan { width: 100%; height: 0.3rem; line-height: 0.3rem; font-size: 0.14rem; color: #666666; background: #F6F9FC; margin-top: 0.1rem; }
+.C-Fo-Z-Qiehuan span { float: left; min-width: 2rem; }
+/*小说切换End*/
+
+
+/*最新读者(粉丝)打赏*/
+.C-Fo-You-One { width: 2.58rem; height: 6.90rem; background: #FFFFFF; border: 0.01rem solid #ededed; }
+.C-Fo-You-OneContent { width: 2.58rem; height: 6.38rem; }
+.C-Fo-You-OC-Box1 { width: 2.5rem; height: 1.34rem; background: #F6F9FC; margin-top: 0.1rem; padding: 0 0.04rem; }
+.C-Fo-You-OC-B1-Box1 { width: 2.22rem; height: 0.3rem; line-height: 0.3rem; font-size: 0.14rem; color: #666666; position: relative; padding-left: 0.25rem; }
+.C-Fo-You-OC-B1-Box2 { width: 2.4rem; height: 0.94rem; margin-top: 0.08rem; }
+.C-Fo-You-OC-B1-Box3 { width: 0.83rem; height: 0.94rem; float: left; position: relative; }
+.C-Fo-You-OC-B1-Box3-1 { width: 0.66rem; height: 0.66rem; border-radius: 50%; border: 0.02rem solid #fff; margin-top: 0.12rem; }
+.C-Fo-You-OC-B1-Box4 { width: 1.57rem; height: 0.94rem; float: right; }
+.C-Fo-You-OC-B1-Box4-1 { width: 1.57rem; height: 0.47rem; line-height: 0.62rem; }
+.C-Fo-You-OC-B1-Box4-2 { width: 1.3rem; height: 0.47rem; line-height: 0.29rem; padding-left: 0.27rem; }
+.OneContent-ul { padding: 0; margin: 0; }
+.OneContent-ul li { list-style: none; width: 2.48rem; height: 0.71rem; margin-left: 0.06rem; border-bottom: 0.01rem dotted #E6E6E6; }
+.OneContent-ul li:last-child { border-bottom: none; }
+.OneContent-ul-Box1 { width: 2.23rem; height: 0.31rem; padding-left: 0.25rem; line-height: 0.35rem; position: relative; color: #999999; font-size: 0.15rem; }
+.OneContent-ul-Box2 { width: 2.23rem; height: 0.35rem; line-height: 0.35rem; position: relative; color: #999999; font-size: 0.15rem; padding-left: 0.25rem; }
+/*最新读者(粉丝)打赏  End*/
+
+/*更多优秀作品*/
+.C-Fo-You-Two { width: 2.58rem; background: #FFFFFF; position: relative; border-left: 0.01rem solid #ededed; border-bottom: 0.01rem solid #ededed; border-right: 0.01rem solid #ededed; }
+.C-Fo-You-Two .TitleDiv1 { text-align: center; padding-left: 0; width: 100%; }
+.C-Fo-You-Tw-Top { width: 2.4rem; height: 2.68rem; }
+.C-Fo-You-Tw-Top-Box1 { width: 2.4rem; height: 0.79rem; }
+.C-Fo-You-Tw-Top-Box1-Imgdiv { width: 0.8rem; height: 0.79rem; border-radius: 50%; border: 0.01rem solid rgba(28,177,92,1); /*position: relative; top: 30px;*/ }
+.C-Fo-You-Tw-Top-Box2 { width: 2.4rem; height: 0.4rem; line-height: 0.4rem; font-size: 0.17rem; color: #333333; text-align: center; }
+.C-Fo-You-Tw-Top-Box3 { width: 1.18rem; height: 0.3rem; line-height: 0.3rem; font-size: 0.15rem; color: #FFFFFF; text-align: center; background: url(//s.faloo.com/novel2/Index/AuthorBQ.png) no-repeat; margin-top: 0.1rem; }
+.C-Fo-You-Tw-Top-Box4 { width: 2.4rem; height: 0.77rem; }
+.C-Fo-You-Tw-Top-Box5 { width: 1.19rem; height: 0.77rem; font-size: 0.14rem; float: left; }
+.C-Fo-You-Tw-Top-Box501 { width: 100%; height: 0.25rem; line-height: 0.25rem; text-align: center; margin-top: 0.15rem; font-size: 0.15rem; color: #FF6600; }
+.C-Fo-You-Tw-Top-Box502 { width: 100%; height: 0.25rem; line-height: 0.25rem; text-align: center; font-size: 0.14rem; color: #999999; }
+.C-Fo-You-Tw-Top-Box6 { width: 0.01rem; height: 0.27rem; background: #E6E6E6; float: left; margin-top: 0.25rem; }
+.C-Fo-You-Tw-Center { width: 2.2rem; height: 1.05rem; background: #F6F9FC; padding: 0.05rem 0.1rem; }
+.C-Fo-You-Tw-Center-Box1 { width: 100%; height: 0.4rem; line-height: 0.4rem; font-size: 0.14rem; color: #666666; }
+.C-Fo-You-Tw-Center-Box2 { width: 100%; height: 0.65rem; line-height: 0.28rem; font-size: 0.14rem; color: #09843E; }
+.C-Fo-You-Tw-Bottom { width: 2.40rem; height: auto; }
+.C-Fo-You-Tw-Bottom-Box1 { width: 2.4rem; height: 0.55rem; line-height: 0.65rem; text-align: center; font-size: 0.17rem; color: #333333; position: relative; }
+.wrap { width: 100%; height: 2.56rem; }
+.poster-main { width: 100%; height: 2.1rem; position: relative; }
+.poster-main .poster-btn { width: 0.5rem; height: 2.1rem; position: absolute; top: 0; cursor: pointer; }
+.poster-main .poster-next-btn { right: 0; background-position: right center; }
+.poster-main .poster-list .list-item { position: absolute; top: 0; left: 0; list-style: none; }
+.poster-main .poster-list .list-item img { width: 100%; height: 100%; box-shadow: 0 0 0.1rem #ccc; border-radius: 0.04rem; }
+.wrapText { display: none; width: 2.4rem; height: 0.45rem; line-height: 0.35rem; font-size: 0.17rem; text-align: center; color: #333333; overflow: hidden; }
+.show{display:block;}
+
+/**数量少于2时的样式**/
+.C-Fo-You-Tw-Bottom2 { }
+.C-Fo-You-Tw-Bottom2 .youxiu_item { height: 1.3rem; width: 2.4rem; border-bottom: 0.01rem dashed #ccc; padding-top: 0.1rem; margin-bottom: 0.03rem; }
+.C-Fo-You-Tw-Bottom2 .youxiu_item:last-child { border: none; }
+.C-Fo-You-Tw-Bottom2 .youxiu_item .y_i_left { float: left; width: 0.8rem; height: 1.13rem; padding: 0.02rem; border-radius: 0.04rem; }
+.C-Fo-You-Tw-Bottom2 .youxiu_item .y_i_left img { width: 0.8rem; height: 1.13rem; border-radius: 0.04rem; }
+.C-Fo-You-Tw-Bottom2 .youxiu_item .y_i_right { float: right; width: 1.47rem; }
+.C-Fo-You-Tw-Bottom2 .youxiu_item .y_i_right div { margin-bottom: 0.1rem; font-size: 0.14rem; color: #999999; height: 0.21rem; line-height: 0.21rem; width: 1.54rem; overflow: hidden; }
+.C-Fo-You-Tw-Bottom2 .youxiu_item .y_i_right .y_i_r_title { font-size: 0.16rem; font-weight: bold; color: #333; }
+.C-Fo-You-Tw-Bottom2 .youxiu_item .y_i_right .y_i_r_new a { color: #FF6600; }
+.C-Fo-You-Tw-Bottom2 .youxiu_item .y_i_right .y_i_r_type a { color: #666; }
+
+
+/*更多优秀作品 End*/
+
+/*本书最新网友犒劳*/
+.C-Fo-You-Three { width: 2.6rem; height: 3.94rem; background: #FFFFFF; }
+.C-Fo-You-Three-Content { width: 2.6rem; height: 3.54rem; }
+.ThreeContent-ul { padding: 0; margin: 0; }
+.ThreeContent-ul li { list-style: none; width: 2.48rem; height: 0.7rem; margin-left: 0.06rem; border-bottom: 0.01rem dotted #E6E6E6; }
+.ThreeContent-ul li:last-child { border-bottom: none; }
+.ThreeContent-ul-Box1 { width: 2.48rem; height: 0.3rem; line-height: 0.4rem; font-size: 0.15rem; color: #999999; }
+.ThreeContent-ul-Box2 { width: 2.48rem; height: 0.4rem; line-height: 0.4rem; font-size: 0.15rem; color: #999999; }
+.ThreeContent-ul-btn { width: 0.78rem; height: 0.22rem; line-height: 0.22rem; color: #FFFFFF; border-radius: 0.2rem; background: #09843E; cursor: pointer; font-size: 0.12rem; text-align: center; float: right; margin-top: 0.1rem; }
+/*本书最新网友犒劳End*/
+
+/*粉丝打赏排行榜*/
+.C-Fo-You-Four { width: 2.6rem; max-height: 4.56rem; background: #FFFFFF; }
+.C-Fo-You-Four-Content { width: 2.58rem; max-height: 4.14rem; border-left: 0.01rem solid #ededed; border-bottom: 0.01rem solid #ededed; border-right: 0.01rem solid #ededed; }
+.FourContent-ul { padding: 0; margin: 0; }
+.FourContent-ul li { list-style: none; width: 2.48rem; height: 0.4rem; margin-left: 0.06rem; border-bottom: 0.01rem dotted #E6E6E6; }
+.FourContent-ul li:last-child { border-bottom: none; }
+.C-Fo-You-Four-Content-Box1 { width: 1.55rem; height: 0.4rem; line-height: 0.4rem; font-size: 0.15rem; color: #999999; text-align: left; float: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; position: relative; padding-left: 0.25rem; }
+.C-Fo-You-Four-Content-Box2 { width: 0.65rem; height: 0.4rem; line-height: 0.4rem; font-size: 0.14rem; color: #999999; text-align: right; float: right; }
+/*粉丝打赏排行榜End*/
+
+/*  更多优秀作品*/
+
+
+/*本周强推,文宣推荐,本类人气榜通用样式*/
+.C-Fo-You-Five { width: 2.6rem; height: 5.36rem; background: #FFFFFF; }
+.C-Fo-You-Five-Content { width: 2.58rem; height: 4.94rem; border-left: 0.01rem solid #ededed; border-bottom: 0.01rem solid #ededed; border-right: 0.01rem solid #ededed; }
+.FiveContent-ul { padding: 0; margin: 0; }
+.FiveContent-ul li { list-style: none; width: 2.48rem; height: 0.41rem; margin-left: 0.06rem; border-bottom: 0.01rem dotted #E6E6E6; }
+.FiveContent-ul li:first-child { height: 1.16rem; }
+.FiveContent-ul li:last-child { border-bottom: none; }
+.FiveContent-ul-Box1 { width: 2.48rem; height: 0.94rem; padding: 0.11rem 0; position: relative; }
+.FiveContent-ul-Box2 { width: 1.45rem; height: 0.94rem; float: right; }
+.FiveContent-ul-Box2-b1 { width: 1.45rem; height: 0.235rem; line-height: 0.235rem; font-size: 0.15rem; color: #333333; text-align: left; overflow: hidden; }
+.FiveContent-ul-Box3 { width: 1.64rem; height: 0.41rem; line-height: 0.41rem; font-size: 0.15rem; color: #333333; text-align: left; float: left; white-space: nowrap; overflow: hidden; /* text-overflow: ellipsis; */ position: relative; padding-left: 0.25rem; }
+.FiveContent-ul-Box4 { width: 0.56rem; height: 0.41rem; line-height: 0.41rem; font-size: 0.14rem; color: #999999; text-align: right; float: right; }
+/*本周强推,文宣推荐,本类人气榜通用样式End*/
+
+/*读者还喜欢*/
+.C-Fo-You-Six { width: 2.6rem; max-height: 5.80rem; background: #FFFFFF; }
+.C-Fo-You-Six-Content { width: 2.58rem; max-height: 5.37rem; background: #FFFFFF; border-left: 0.01rem solid #ededed; border-bottom: 0.01rem solid #ededed; border-right: 0.01rem solid #ededed; }
+.SixContent-ul { padding: 0; margin: 0; }
+.SixContent-ul li { list-style: none; width: 2.48rem; height: 1.07rem; margin-left: 0.06rem; border-bottom: 0.01rem dotted #E6E6E6; }
+.SixContent-ul li:last-child { border-bottom: none; }
+.SixContent-Box1 { width: 0.06rem; height: 0.85rem; float: left; margin-top: 0.1rem; margin-left: 0.11rem; }
+.SixContent-Box2 { width: 1.70rem; height: 0.85rem; float: right; margin-top: 0.1rem; }
+.SixContent-Box3 { width: 100%; height: 0.28rem; line-height: 0.28rem; color: #999999; font-size: 0.15rem; white-space: nowrap; overflow: hidden; }
+
+/*读者还喜欢End*/
+
+/*喜欢本书的网友*/
+.C-Fo-You-Seven { width: 2.6rem; /* height: 5.45rem; */ background: #FFFFFF; /* overflow: hidden; */ }
+.C-Fo-You-Seven-Content { width: 2.58rem; /* height: 5.05rem; */ background: #FFFFFF; overflow: hidden; border-left: 0.01rem solid #ededed; border-bottom: 0.01rem solid #ededed; border-right: 0.01rem solid #ededed; }
+.SevenContent-ul { padding: 0; margin: 0; }
+.SevenContent-ul li { list-style: none; width: 2.48rem; height: 1.00rem; margin-left: 0.06rem; border-bottom: 0.01rem dotted #E6E6E6; }
+.SevenContent-ul li:last-child { border-bottom: none; }
+.SevenContent-Box1 { width: 0.60rem; height: 0.60rem; float: left; margin-top: 0.20rem; margin-left: 0.13rem; border-radius: 50%; border: 0.01rem solid #e6e6e6; }
+.SevenContent-Box1 img { width: 0.60rem; height: 0.60rem; border-radius: 50%; }
+.SevenContent-Box2 { width: 1.66rem; height: 1.00rem; float: right; }
+.SevenContent-Box3 { width: 100%; white-space: nowrap; overflow: hidden; margin-top: 0.14rem; }
+.SevenContent-Box4 { color: #FFFFFF; font-size: 0.13rem; white-space: nowrap; overflow: hidden; margin-top: 0.07rem; height: 0.16rem; background: rgba(255,106,35,1); border-radius: 0.04rem; margin-left: 0; display: inline-block; padding: 0 0.06rem 0.02rem 0.06rem; }
+.SevenContent-Box5 { width: 100%; color: #999999; font-size: 0.15rem; white-space: nowrap; overflow: hidden; margin-top: 0.04rem; }
+.SevenContent-Box6 { width: 100%; white-space: nowrap; overflow: hidden; margin-top: 0.20rem; }
+.SevenContent-Box7 { width: 100%; color: #999999; font-size: 0.15rem; white-space: nowrap; overflow: hidden; margin-top: 0.14rem; }
+
+/*读者还喜欢End*/
+
+/*内容第四屏End*/
+
+.bottom1 { width: 100%; height: 0.20rem; background: #F6F9FC; float: left; }
+.nodetail { font-size: 0.17rem; line-height: 0.40rem; text-align: center; color: red; }
+/*----------------------------------结束内容区域代码--------------------------------------------------*/
+
+/*----------------------------------开始管理员模式按钮--------------------------------------------------*/
+.adminBox { float: right; position: relative; z-index: 0; }
+.adminBox .ab_btn { display: inline-block; height: 0.31rem; line-height: 0.31rem; border-radius: 0.16rem; padding: 0 0.2rem; font-size: 0.16rem; }
+.adminBox .ab_btn_rec { color: #FF6600; }
+.adminBox .ab_btn_rec span { display: inline-block; background: url(//s.faloo.com/novel2/Index/admin_rec.png) no-repeat left center; background-size: 0.18rem; padding-left: 0.21rem; }
+.adminBox .ab_btn_set { color: #1D8E56; }
+.adminBox .ab_btn_set span { display: inline-block; background: url(//s.faloo.com/novel2/Index/admin_set.png) no-repeat left center; background-size: 0.18rem; padding-left: 0.21rem; }
+
+.adminBox .optionWin { position: absolute; top: 0.44rem; right: 0; background-color: #fff; z-index: 10; width: 1.37rem; height: 4.45rem; border: solid 0.01rem #1D8E56; border-radius: 0.04rem; display: none; }
+.adminBox .optionWin .arrow, .adminBox .optionWin .arrow::after { position: absolute; display: block; width: 0; height: 0; border-color: transparent; border-style: solid; }
+.adminBox .optionWin .arrow { top: -0.05rem; left: 50%; margin-left: 0.21rem; border-width: 0.05rem; border-top-width: 0; border-bottom-color: #1D8E56; }
+.adminBox .optionWin .arrow::after { border-width: 0.04rem; top: 0.01rem; margin-left: -0.04rem; content: " "; border-top-width: 0; border-bottom-color: #fff; }
+.adminBox .optionWin ul { margin: 0; padding: 0; text-align: center; color: #1D8E56; font-size: 0.16rem; }
+.adminBox .optionWin ul li { height: 0.36rem; line-height: 0.36rem; list-style: none; }
+.adminBox .optionWin .solidLine { border-bottom: solid 0.01rem #1D8E56; }
+.adminBox .optionWin .optionTitle div { background-color: #4D4D4D; height: 0.32rem; line-height: 0.32rem; margin: 0.02rem 0.02rem; color: #fff; font-size: 0.16rem; }
+.adminBox .optionWin .dashedLine { border-bottom: dashed 0.01rem #D7D9D8; margin: 0 0.05rem; }
+
+/*----------------------------------结束管理员模式按钮--------------------------------------------------*/
+
+
+/*----------------------------------开始底部样式--------------------------------------------------*/
+.bottom { min-width: 100%; height: 3.42rem; background: #FFFFFF; float: left; border-top: 0.01rem solid #E6E6E6; }
+.bottom .bottomTop { width: 11.8rem; padding: 0.1rem 0.1rem 0rem 0.1rem; min-height: 1.51rem; border-bottom: 0.01rem solid #E6E6E6; }
+.bottom .bottomTop p { line-height: 0.2rem; font-size: 0.14rem; color: #80A78C; }
+.bottom .bottomBtom { width: 12rem; height: 1.51rem; padding-top: 0.08rem; }
+.bottom .bottomBtom p { line-height: 0.34rem; color: #666666; font-size: 0.15rem; text-align: center; }
+.bottom .bottomBtom a { margin-right: 0.03rem; }
+.bottom .bottomBtom a:hover { color: #FF6600; }
+
+
+/*----------------------------------结束底部样式--------------------------------------------------*/
+
+/*2048*1536*/
+@media only screen and (min-width:2000px) and (max-width:2300px) {
+html { font-size: 670%; }
+}
+/*2304*864*/
+@media only screen and (min-width:2300px) and (max-width:2500px) {
+html { font-size: 755%; }
+}
+/*2560*1024*/
+@media only screen and (min-width:2500px) and (max-width:2800px) {
+html { font-size: 839%; }
+}
+/*2800*1050*/
+@media only screen and (min-width:2800px) and (max-width:3000px) {
+html { font-size: 915%; }
+}
+/*3200*1200*/
+@media only screen and (min-width:3000px) and (max-width:3500px) {
+html { font-size: 1048%; }
+}
+/*4096*1536*/
+@media only screen and (min-width:3500px) and (max-width:4500px) {
+html { font-size: 1334%; }
+}
+/**/
+@media only screen and (min-width:4500px) and (max-width:5000px) {
+html { font-size: 1571%; }
+}
+/**/
+@media only screen and (min-width:5000px) and (max-width:5500px) {
+html { font-size: 1705%; }
+}
+/**/
+@media only screen and (min-width:6000px) and (max-width:6500px) {
+html { font-size: 2000%; }
+}
+
+@media only screen and (min-width:6500px) and (max-width:7000px) {
+html { font-size: 2190%; }
+}
+
+@media only screen and (min-width:7000px) and (max-width:7500px) {
+html { font-size: 2390%; }
+}
+
+@media only screen and (min-width:7500px) and (max-width:8000px) {
+html { font-size: 2590%; }
+}
+
+*{-webkit-text-size-adjust: none;}
+/*文章主体*/
+.center { width: 100%; overflow: hidden; min-width:12rem; }
+.center .c_backgroud { position: absolute; opacity: 0.01; overflow: inherit; width: 100%; min-width: 12rem; z-index: -10; }
+.center .c_content {width: 11.58rem;min-width: 11.58rem;/* border-radius: 0.04rem; */box-shadow: 0rem 0rem 0.1rem 0rem #E7E7E7;margin-top: 0.2rem;padding: 0.28rem 0.2rem 0.3rem 0.2rem;overflow: hidden;background: #ffffff;margin-bottom: 0.27rem;position: relative;overflow: hidden;border: 0.01rem solid #ededed;}
+/*渐变*/
+.center .c_content .c_con_titles {width: 12.0rem;height: 0.40rem;position: absolute;top: 0;left: 0;/* background: linear-gradient(180deg,#f4fff4 0%,#fff 100%); */background: url(//s.faloo.com/novel2/CategoryIndex/titleback.jpg) no-repeat;background-size: 12rem 100%;}
+/*标题*/
+.center .c_content .c_con_top { width: 100%; text-align: center; overflow: hidden; position: relative; }
+.center .c_content .c_con_top .c_con_t_title { width: 100%; text-align: center; font-size: 0.24rem;  font-weight: 400; color: #333333; overflow: inherit; }
+.center .c_content .c_con_top .c_con_t_title a { float: right; margin-top: 0.04rem; width: 0.3rem; height: 0.23rem; cursor: pointer; }
+.center .c_content .c_con_top .c_con_t_title a img { width: 100%; height: 100%; }
+.center .c_content .c_con_top .c_con_t_title1 {color: #666666;padding-top: 0.28rem;padding-bottom: 0.3rem;border-bottom: 0.01rem dashed #CCCCCC;font-size: 0.18rem;}
+.center .c_content .c_con_top .c_con_t_title1 .url { cursor: pointer; }
+.center .c_content .c_con_top .c_con_t_title1 .url:hover { color: #FF6600; }
+.center .c_content .c_con_top .c_con_t_title1 span { margin-left: 0.1rem; margin-right: 0.1rem; }
+/*作品相关*/
+.center .c_content .c_con_relation {width: 100%;margin-top: 0.23rem;overflow: inherit;}
+.center .c_content .c_con_relation .c_con_rl_title { width: 100%; overflow: inherit; text-align: center; font-size: 0.22rem;  font-weight: 400; color: #038139; clear: both; }
+.center .c_content .c_con_relation .c_con_rl_data { width: 100%; overflow: inherit; margin-top: 0rem; }
+.center .c_content .c_con_relation .c_con_rl_data .c_con_rl_d_frame {width: 100%;overflow: inherit;width: 2.58rem;height: 0.4rem;/* box-shadow: 0rem 0rem 0.1rem 0rem #DDDDDD; *//* border-radius: 0 0.1rem 0 0.1rem; */line-height: 0.4rem;border: 0.01rem dashed #e5e5e5;cursor: pointer;float: left;margin-right: 0.2rem;margin-bottom: 0.2rem;}
+.center .c_content .c_con_relation .c_con_rl_data .c_con_rl_d_frame:hover .c_con_rl_d_f_detail{color:#FF6600;}
+.center .c_content .c_con_relation .c_con_rl_data .c_con_rl_d_frame:visited .c_con_rl_d_f_detail{color:#999;}
+.center .c_content .c_con_relation .c_con_rl_data .c_con_rl_d_frame .c_con_rl_d_f_gun { width: 0.04rem; height: 0.2rem; background: rgba(9,132,62,1); float: left; margin-top: 0.1rem; margin-right: 0.13rem; display: none; }
+.center .c_content .c_con_relation .c_con_rl_data .c_con_rl_d_frame .c_con_rl_d_f_detail { font-size: 0.14rem;  font-weight: 400; overflow: inherit; float: left; width: 2.42rem; white-space: nowrap; color: #666666; padding-left: 0.1rem; }
+
+.center .c_content .c_con_relation .c_con_rl_data .c_con_rl_d_frame .c_con_rl_d_f_detail .c_con_li_de_new { display: inline-block; position: relative; top: 0.03rem; left: 0.03rem; /* margin-left: 2.1rem; */ /* margin-top: 0.03rem; */ }
+.center .c_content .c_con_relation .c_con_rl_data .c_con_rl_d_frame .c_con_rl_d_f_detail .c_con_li_de_new img { width: 0.34rem; height: 0.16rem; }
+/*正文*/
+.center .c_content .c_con_mainbody { width: 100%; margin-top: 0.05rem; overflow: inherit; }
+.center .c_content .c_con_mainbody .c_con_title { width: 100%; text-align: center; overflow: inherit; font-size: 0.22rem;  font-weight: 400; color: #038139; }
+.c_con_free { width: 100%; margin-top: 0.3rem; overflow: inherit; font-size: 0.16rem;  font-weight: bold; color: #333333; }
+.c_con_free .c_con_fr_roll { overflow: inherit; font-size: 0.16rem;  font-weight: 400; color: #09843E; margin-left: 0.07rem; line-height: 0.26rem; }
+.c_con_list { width: 100%; overflow: inherit; margin-top: 0.1rem; }
+.c_con_list .c_con_li_detail {width: 2.79rem;height: 0.44rem;float: left;line-height: 0.44rem;font-size: 0.14rem;font-weight: 400;color: #666666;cursor: pointer;padding-right: 0.1rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;display: block;}
+.c_con_list .c_con_li_detail:visited { color: #999999; }
+.c_con_list .c_con_li_detail:hover { color: #FF6600; }
+.c_con_list .c_con_li_detail1 { width: 2.1rem; height: 0.44rem; float: left; line-height: 0.44rem; font-size: 0.14rem;  font-weight: 400; color: #999999; cursor: pointer; padding-right: 0.8rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.c_con_list .c_con_li_detail1:hover { color: #FF6600; }
+.c_con_list .c_con_li_clear { clear: both; width: 100%; height: 0.01rem; border-bottom: 0.01rem dashed #CCCCCC; }
+.center .c_content .c_con_mainbody .c_con_viptitle { width: 100%; overflow: inherit; height: 0.42rem; line-height: 0.42rem; background: #F6F9FC; border-radius: 0.04rem; font-size: 0.16rem;  font-weight: 400; color: #FF6600; text-align: center; margin-top: 0.2rem; }
+.center .c_content .c_con_mainbody .c_con_vipdesc { width: 100%; overflow: inherit; margin-top: 0.2rem; }
+.center .c_content .c_con_mainbody .c_con_vipdesc .c_con_v_icon { overflow: inherit; float: left; font-size: 0.16rem;  font-weight: bold; color: #FF6600; float: left; line-height: 0.32rem; }
+.center .c_content .c_con_mainbody .c_con_vipdesc .c_con_v_roll { overflow: inherit; float: left; font-size: 0.16rem;  font-weight: 400; color: #09843E; float: left; margin-left: 0.07rem; line-height: 0.32rem; /* margin-top: 0.05rem; */ width: 8.00rem; }
+.center .c_content .c_con_mainbody .c_con_vipdesc .c_con_v_drawup { overflow: inherit; float: right; width: 1.55rem; height: 0.32rem; line-height: 0.32rem; text-align: center; border: 0.01rem solid #09843E; border-radius: 0.16rem; font-size: 0.14rem;  font-weight: 400; color: #09843E; cursor: pointer; }
+.center .c_content .c_con_mainbody .c_con_vipdesc .c_con_v_recharge { overflow: inherit; float: right; width: 0.95rem; height: 0.32rem; line-height: 0.32rem; text-align: center; background: #FF6600; border: 0.01rem solid #FF6600; border-radius: 0.16rem; font-size: 0.14rem;  font-weight: 400; color: #FFFFFF; margin-left: 0.1rem; cursor: pointer; }
+.c_con_list .c_con_li_detail .c_con_li_de_number2 { /* color: #FF6600; */ padding-right: 0.03rem; }
+.c_con_list .c_con_li_detail1 .c_con_li_de_number2 { color: #FF6600; }
+.c_con_list .c_con_li_detail .c_con_li_de_new { display: inline-block; position: relative; top: 0.03rem; left: 0.03rem; /* width: 0.34rem; */ /* height: 0.16rem; */ /* margin-top: 0.03rem; */ /* margin-left: 2.1rem; */ }
+.c_con_list .c_con_li_detail .c_con_li_de_new img { width: 0.34rem; height: 0.16rem; }
+.c_con_list .c_con_li_detail1 .c_con_li_de_new { color: #FF6600; }
+
+.width1 { max-width: 2.3rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; float: left; }
+.width2 { max-width: 1.9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; float: left; }
+.width3 { max-width: 1.6rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; float: left; }
+.width4 { max-width: 2.1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; float: left; }
+.width5 { max-width: 2rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; float: left; }
+.width6 { max-width: 1.6rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; float: left; }
+.width7 { max-width: 1.3rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; float: left; }
+.width8 { max-width: 1.8rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; float: left; }
+/*备注说明*/
+.c_remark {width: 12rem;min-width: 12rem;padding-bottom: 0.27rem;/* padding-right: 0.4rem; */}
+.c_remark p { font-size: 0.16rem;  font-weight: 400; color: #666666; line-height: 0.36rem; margin: 0 auto; }
+
+/*APP下载*/
+.dowload {min-width: 11.98rem;height: 4.1rem;overflow: hidden;margin-bottom: 0.2rem;box-shadow: 0rem 0rem 0.1rem 0rem #E7E7E7;background: url("//s.faloo.com/novel2/NovelDetail/bottom.jpg") no-repeat;background-size: 100% 100%;text-align: center;border: 0.01rem solid #ededed;}
+.dowload .dow_title { width: 100%; text-align: center; overflow: hidden; margin-top: 0.45rem; margin-bottom: 0.28rem; font-size: 0.3rem;  font-weight: 400; color: #FF6600; }
+.dowload .dow_title1 { width: 100%; text-align: center; overflow: hidden; margin-bottom: 0.4rem; font-size: 0.24rem;  font-weight: 400; color: #999999; }
+.dowload .dow_code { width: 4rem; }
+.dowload .dow_code .dow_qrcode { float: left; text-align: right; width: 1.56rem; border: 0.05rem solid white; box-shadow: 0 0 0.1rem 0 #E5E5E5; height: 1.55rem; border-radius: 0.1rem; }
+.dowload .dow_code .dow_qrcode img { width: 100%; height: 100%; }
+.dowload .dow_code .dow_ios {height: 0.51rem;line-height: 0.51rem;border: 0.01rem solid #09843E;border-radius: 0.26rem;font-size: 0.24rem;font-weight: 400;color: #09843E;background: url("//s.faloo.com/novel2/NovelDetail/apple.png") no-repeat left 0.18rem top 0.08rem;/* float: left; */padding-left: 0.55rem;padding-right: 0.18rem;position: absolute;/* left: 0.65rem; */margin-top: 0.07rem;margin-left: 2.2rem;cursor: pointer;background-size: 0.26rem 0.3rem;display: block;}
+.dowload .dow_code .dow_android { height: 0.51rem; line-height: 0.51rem; border: 0.01rem solid #09843E; border-radius: 0.26rem; font-size: 0.24rem;  font-weight: 400; color: #09843E; background: url("//s.faloo.com/novel2/NovelDetail/android.png") no-repeat left 0.18rem top 0.11rem; /* float: left; */ padding-left: 0.55rem; padding-right: 0.10rem; position: absolute; /* top: 1.01rem; */ /* left: -1.2rem; */ margin-top: 1.05rem; margin-left: 2.2rem; cursor: pointer; background-size: 0.25rem 0.3rem; display: block; }
+
+/*****************************下载页面begin*********************************/
+.center .c_content .c_con_type { overflow: hidden; margin-top: 0.28rem; }
+.center .c_content .c_con_type .c_con_t_left { font-size: 0.22rem;  font-weight: 400; color: rgba(51,51,51,1); float: left; }
+.center .c_content .c_con_type .c_con_t_left .c_con_t_l_line {width: 0.04rem;height: 0.25rem;background: linear-gradient(0deg,rgba(29,181,95,1),rgba(64,215,129,1));border-radius: 0.02rem;float: left;position: relative;top: 0.02rem;margin-right: 0.06rem;}
+
+.c_con_t_l_line { }
+.center .c_content .c_con_type .c_con_t_right { float: right; }
+.center .c_content .c_con_type .c_con_t_right input { display: none; }
+.center .c_content .c_con_type .c_con_t_right label { cursor: pointer; }
+.center .c_content .c_con_type .c_con_t_right input + .c_con_t_r_sebutton {background-position: 0% 0.02rem;display: inline-block;content: "";height: 0.22rem;margin-right: 0.2rem;vertical-align: bottom;padding-left: 0.25rem;background-size: 0.2rem 0.2rem;font-size: 0.16rem;font-weight: 400;color: #666666;background-color: transparent;background-image: url('//s.faloo.com/novel2/BuyBook/check.png');background-repeat: no-repeat;background-attachment: scroll;}
+.center .c_content .c_con_type .c_con_t_right input + .c_con_t_r_sebutton:last-child{margin-right:0}
+.center .c_content .c_con_type .c_con_t_right input:checked + .c_con_t_r_sebutton {background-image: url(//s.faloo.com/novel2/BuyBook/checked.png);background-position-y: 0.01rem;}
+.center .c_content .c_con_detail { margin-top: 0.2rem; overflow: hidden; }
+.center .c_content .c_con_detail .c_con_de_title { height: 0.5rem; background: rgba(246,249,252,1); line-height: 0.5rem; text-align: center; font-size: 0.2rem;  font-weight: 400; color: rgba(51,51,51,1); }
+.center .c_content .c_con_detail .c_con_de_title span { color: #ff6600; padding-left: 0.05rem; }
+.center .c_content .c_con_detail .c_con_de_data {width: 5.67rem;float: left;margin-top: 0.2rem;height: 0.56rem;border: 0.01rem dashed rgba(230,228,227,1);border-radius: 0.04rem;line-height: 0.56rem;}
+.center .c_content .c_con_detail .c_con_de_data:nth-child(2n+3) { margin-left: 0.2rem; }
+.center .c_content .c_con_detail .c_con_de_data .c_con_de_d_title { font-size: 0.17rem;  font-weight: 400; color: rgba(102,102,102,1); display: inline-block; float: left; margin-left: 0.08rem; max-width: 4.7rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.center .c_content .c_con_detail .c_con_de_data .c_con_de_d_title:hover { color: #FF6600; }
+.center .c_content .c_con_detail .c_con_de_data .c_con_de_d_title span { color: #FF6600; }
+.center .c_content .c_con_detail .c_con_de_data .c_con_de_d_down { font-size: 0.17rem;  font-weight: 400; color: rgba(28,177,92,1); display: inline-block; float: right; margin-right: 0.2rem; position: relative; }
+.center .c_content .c_con_detail .c_con_de_data .c_con_de_d_down:hover { text-decoration: underline; }
+.center .c_content .c_con_detail .c_con_de_data .c_con_de_d_down i { background: url(//s.faloo.com/novel2/downpage/down_i.png) no-repeat; display: inline-block; width: 0.20rem; height: 0.17rem; background-size: 0.20rem 0.17rem; position: relative; top: 0.02rem; margin-right: 0.03rem; }
+.center .c_content .c_con_line { height: 0.1rem; background: rgba(246,249,252,1); margin-top: 0.2rem; }
+.center .c_content .c_con_vip { overflow: hidden; margin-top: 0.18rem; font-size: 0.22rem;  font-weight: 400; color: #333333; }
+.center .c_content .c_con_vip .c_con_v_line {float: left;width: 0.04rem;height: 0.25rem;background: linear-gradient(0deg,rgba(29,181,95,1),rgba(64,215,129,1));border-radius: 0.02rem;position: relative;top: 0.02rem;margin-right: 0.06rem;}
+.center .c_content .c_con_vip span { }
+.center .c_content .c_con_vip .c_con_vip1 { color: #FF6600; }
+.center .c_content .c_con_down { padding-top: 0.2rem; overflow: hidden; padding-bottom: 0.25rem; width: 12.0rem; position: relative; left: -0.2rem; }
+.center .c_content .c_con_down .c_con_dw_type { width: 2.7rem; height: 1.48rem; background: rgba(255,255,255,1); border: 0.02rem solid rgba(242,242,242,1); border-radius: 0.05rem; display: block; float: left; margin-left: 0.2rem; position: relative; text-align: center; }
+.center .c_content .c_con_down .c_con_dw_type:hover { border-color: #1CB15C; box-shadow: 0 0 0.1rem 0 #BCE2CC; }
+.center .c_content .c_con_down .c_con_dw_type i { background: url(//s.faloo.com/novel2/downpage/type_i.png) no-repeat; display: inline-block; width: 0.58rem; height: 0.63rem; background-size: 0.58rem 0.63rem; position: absolute; top: -0.02rem; right: -0.02rem; }
+.center .c_content .c_con_down .c_con_dw_type .c_con_dw_type_1 { display: block; font-size: 0.22rem;  font-weight: 400; color: rgba(102,102,102,1); margin-top: 0.4rem; position: relative; }
+.center .c_content .c_con_down .c_con_dw_type .c_con_dw_type_2 { display: block; font-size: 0.16rem;  font-weight: 400; color: rgba(153,153,153,1); margin-top: 0.2rem; }
+.center .c_content .c_con_remark { margin-top: 0.2rem; }
+.center .c_content .margin0 { margin-top: 0rem; }
+.center .c_content .margin20 { margin-bottom: 0.2rem; }
+.center .c_content .c_con_remark .c_con_r_p1 { font-size: 0.18rem;  font-weight: 400; color: rgba(153,153,153,1); }
+.center .c_content .c_con_remark .c_con_r_p2 { font-size: 0.18rem;  font-weight: 400; color: #666666; line-height: 0.36rem; margin-top: 0.05rem; }
+.center .c_content .c_con_remark .c_con_r_p2 span { color: #FF6600; }
+.center .c_content .c_con_remark .c_con_r_p2 a { color: #1CB15C; }
+.center .c_content .c_con_remark .c_con_r_p2 a:hover { color: #FF6600; }
+.center .c_content .c_con_remark .c_con_r_p3 { font-size: 0.18rem;  font-weight: 400; color: #FF6600; line-height: 0.36rem; }
+.center .c_content .c_con_img {margin-top: 0.13rem;background: url(//s.faloo.com/novel2/downpage/c_con_img.png) no-repeat;width: 100%;height: 1.5rem;background-size: 100% 1.5rem;position: relative;text-align: center;border-radius: 0.04rem;}
+.center .c_content .c_con_img .c_con_i_left { background: url(//s.faloo.com/novel2/downpage/c_con_i_left.png) no-repeat; width: 2.05rem; height: 1.50rem; background-size: 2.05rem 1.50rem; position: absolute; left: 0; top: 0; }
+.center .c_content .c_con_img .c_con_i_center { background: url(//s.faloo.com/novel2/downpage/c_con_i_center.png) no-repeat; width: 7.27rem; height: 0.26rem; background-size: 7.27rem 0.26rem; position: absolute; left: 2.02rem; top: 0.45rem; }
+.center .c_content .c_con_img .c_con_i_center1 { display: inline-block; text-align: center; background: url(//s.faloo.com/novel2/downpage/c_con_i_center1.png) no-repeat; background-size: 1.69rem 0.46rem; width: 1.69rem; height: 0.46rem; line-height: 0.42rem; font-size: 0.22rem;  font-weight: bold; color: rgba(255,255,255,1); margin-top: 0.9rem; }
+.center .c_content .c_con_img .c_con_i_right { background: url(//s.faloo.com/novel2/downpage/c_con_i_right.png) no-repeat; width: 2.02rem; height: 1.40rem; background-size: 2.02rem 1.40rem; position: absolute; right: 0.25rem; bottom: 0; }
+.center .c_content .c_con_bottom { font-size: 0.20rem;  font-weight: 400; color: rgba(28,177,92,1); overflow: hidden; margin-top: 0.2rem; }
+.center .c_content .c_con_bottom a:hover { color: #FF6600; }
+
+.rank { width: 12.0rem; overflow: hidden; }
+.center .c_detail .last { border: 0; margin-bottom: 0; }
+.rank .rk_top { width: 100%; overflow: inherit; }
+.rank .rk_top .rk_t_left {width: 40%;overflow: inherit;float: left;text-align: left;padding-left: 0.07rem;font-size: 0.18rem;font-weight: 400;color: #333333;}
+.rank .rk_top .rk_t_left .rk_t_l_sign { width: 0.04rem; height: 0.2rem; background: linear-gradient(0deg,rgba(29,181,95,1),rgba(64,215,129,1)); border-radius: 0.02rem; position: relative; left: -0.07rem; top: 0.03rem; float: left; }
+.rank .rk_top .rk_t_right { width: 40%; overflow: inherit; float: right; text-align: right; padding: 0.02rem 0.12rem 0 0; font-size: 0.14rem;  font-weight: 400; color: #666666; }
+.rank .rk_top .rk_t_right a:hover { color: #ff6600; }
+.rank .rk_top .rk_t_right a { cursor: pointer; }
+.rank .rk_content { width: 100%; overflow: inherit; }
+.rank .rk_content .rk_c_data { width: 1.93rem; overflow: inherit; float: left; text-align: center; margin-right: 0.08rem; }
+.rank .rk_content .rk_c_data:last-child { margin-right: 0; }
+.rank .rk_content .margin { margin-left: 0rem; }
+.rank .rk_content .rk_c_data .rk_c_d_title {width: 1.75rem;text-align: center;font-size: 0.17rem;font-weight: 400;color: rgba(102,102,102,1);margin: 0.2rem 0 0.28rem 0.09rem;overflow: inherit;cursor: pointer;display: block;overflow: hidden;white-space: nowrap;}
+.rank .rk_content .rk_c_data .rk_c_d_title:hover { color: #FF6600; }
+/*打赏榜*/
+.rank .rk_content .rk_c_data .rk_c_d_img1 {width: 100%;width: 1.66rem;height: 2.35rem;background: rgba(255,255,255,1);box-shadow: 0rem 0rem 0.1rem 0rem #E7E7E7;overflow: inherit;text-align: center;margin-top: 0.2rem;border: 0.03rem solid white;cursor: pointer;border-radius: 0.04rem;}
+.rank .rk_content .rk_c_data .rk_c_d_img1 a { width: 100%; height: 100%; display: inline-block; }
+.rank .rk_content .rk_c_data .rk_c_d_img1 a img { width: 100%; height: 100%; }
+.rank .rk_content .rk_c_data .rk_c_d_number5 { width: 0.32rem; height: 0.32rem; background: #FF6600; border-radius: 0.04rem; line-height: 0.32rem; text-align: center; font-size: 0.18rem;  font-weight: 400; color: rgba(255,255,255,1); position: absolute; margin: 2.03rem 0 0 1.34rem; }
+.rank .rk_content .rk_c_data .rk_c_d_number6 { width: 0.32rem; height: 0.32rem; background: #FF954E; border-radius: 0.04rem; line-height: 0.32rem; text-align: center; font-size: 0.18rem;  font-weight: 400; color: rgba(255,255,255,1); position: absolute; margin: 2.03rem 0 0 1.34rem; }
+.rank .rk_content .rk_c_data .rk_c_d_number7 { width: 0.32rem; height: 0.32rem; background: #FF954E; border-radius: 0.04rem; line-height: 0.32rem; text-align: center; font-size: 0.18rem;  font-weight: 400; color: rgba(255,255,255,1); position: absolute; margin: 2.03rem 0 0 1.34rem; }
+.rank .rk_content .rk_c_data .rk_c_d_number8 { width: 0.32rem; height: 0.32rem; background: #000000; opacity: 0.6; border-radius: 0.04rem; line-height: 0.32rem; text-align: center; font-size: 0.18rem;  font-weight: 400; color: rgba(255,255,255,1); position: absolute; margin: 2.03rem 0 0 1.34rem; }
+
+.no { margin-top: 0.2rem; margin-bottom: 0.2rem; display: block; text-align: center; font-size: 0.20rem; color: #333333; }
+/*****************************下载页面end*********************************/
+
+
+/*****************************下载页面begin*********************************/
+
+/*左浮动内容1*/
+.back {width: 12rem;/* overflow: hidden; *//* padding: 0; */}
+.center .c_left {width: 9.26rem;float: left;margin-right: 0.12rem;margin-top: 0.2rem;box-shadow: 0 0 0.1rem 0 #E7E7E7;overflow: hidden;background: #FFFFFF;position: relative;border: 0.01rem solid #ededed;}
+.center .c_left .c_l_title {width: 100%;height: 0.4rem;box-shadow: 0 0rem 0.10rem 0 #E7E7E7;line-height: 0.4rem;/* background: linear-gradient(180deg,#f4fff4 0%,#fff 100%); */background: url(//s.faloo.com/novel2/CategoryIndex/titleback.jpg) no-repeat;background-size: 12rem 100%;overflow: hidden;}
+.center .c_left .c_l_title .c_l_t_line {width: 0.04rem;height: 0.20rem;background: linear-gradient(0deg,rgba(29,181,95,1),rgba(64,215,129,1));border-radius: 0.02rem;margin-left: 0.10rem;float: left;margin-top: 0.1rem;/* display: none; */}
+.center .c_left .c_l_title .c_l_t_left {margin-left: 0.06rem;font-size: 0.17rem;font-weight: 400;color: #333333;float: left;}
+.center .c_left .c_l_title1 { font-size: 0.24rem;  font-weight: 400; color: rgba(51,51,51,1); margin-top: 0.20rem; margin-bottom: 0.15rem; display: block; text-align: center; max-width: 8rem; padding: 0 0.54rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.center .c_left .c_l_title2 { font-size: 0.24rem;  font-weight: 400; color: #333333; display: block; margin: 0.30rem 0.2rem 0 0.2rem; text-align: center; }
+.center .c_left .c_l_title2 font { color: #666666; font-size: 0.20rem; }
+.center .c_left .c_l_title2 span { color: #FF6600; }
+.center .c_left .c_l_detail { overflow: hidden; padding: 0 0rem; text-align: center; }
+.center .c_left .c_l_detail .c_l_d_center { width: 0.68rem; height: 0.68rem; background-color: #1CB15C; border-radius: 50%; border: 0.05rem solid #FFFFFF; position: relative; z-index: 1; }
+.center .c_left .c_l_detail .c_l_d_center i { background-image: url(//s.faloo.com/novel2/downpage/c_l_d_center.png); background-repeat: no-repeat; background-size: 0.17rem 0.46rem; width: 0.17rem; height: 0.46rem; display: block; position: absolute; left: 0.25rem; top: 0.10rem; }
+.center .c_left .c_l_detail .c_l_d_data { width: 8.68rem; overflow: hidden; height: 0.88rem; background: #1CB15C; position: absolute; top: 1.6rem; text-align: center; margin-left: 0.2rem; }
+.center .c_left .c_l_detail .c_l_d_data .c_l_d_da_left { background-image: url(//s.faloo.com/novel2/downpage/c_l_d_da_left.png); background-repeat: no-repeat; background-size: 1.18rem 0.25rem; width: 1.18rem; height: 0.25rem; display: block; position: absolute; left: 1.07rem; top: 0.31rem; }
+.center .c_left .c_l_detail .c_l_d_data .c_l_d_da_center { font-size: 0.30rem;  font-weight: 400; color: rgba(255,255,255,1); margin-top: 0.21rem; }
+.center .c_left .c_l_detail .c_l_d_data .c_l_d_da_right { background-image: url(//s.faloo.com/novel2/downpage/c_l_d_da_right.png); background-repeat: no-repeat; background-size: 1.18rem 0.25rem; width: 1.18rem; height: 0.25rem; display: block; position: absolute; right: 1.07rem; top: 0.31rem; }
+.center .c_left .c_l_detail .c_l_d_down { display: inline-block; width: 1.80rem; height: 0.49rem; line-height: 0.46rem; background: linear-gradient(0deg,rgba(255,102,0,1) 0%,rgba(255,134,53,1) 100%); border-radius: 0.25rem; box-shadow: 0 0 0.1rem 0 #FF6600; margin-top: 0.90rem; font-size: 0.22rem;  font-weight: bold; color: rgba(255,255,255,1); }
+.center .c_left .c_l_detail .c_l_d_down1 { font-size: 0.22rem;  font-weight: 400; color: rgba(102,102,102,1); margin-top: 0.18rem; }
+.center .c_left .c_l_detail .c_l_d_down1 a { font-size: 0.22rem;  font-weight: 400; color: rgba(4,121,54,1); }
+.center .c_left .c_l_detail .c_l_d_down1 a:hover { color: #FF6600; }
+.center .c_left .c_l_detail .c_l_d_down2 { padding-top: 0.30rem; padding-bottom: 0.40rem; overflow: hidden; }
+.center .c_left .c_l_detail .c_l_d_down2 .c_l_d_dw_type { width: 2.06rem; height: 1.50rem; background: rgba(255,255,255,1); border: 0.02rem solid rgba(242,242,242,1); border-radius: 0.05rem; display: block; float: left; margin-left: 0.1rem; position: relative; text-align: center; }
+.center .c_left .c_l_detail .c_l_d_down2 .c_l_d_dw_type:hover { border-color: #1CB15C; box-shadow: 0 0 0.1rem 0 #BCE2CC; }
+.center .c_left .c_l_detail .c_l_d_down2 .c_l_d_dw_type:first-child { margin-left: 0.2rem; }
+.center .c_left .c_l_detail .c_l_d_down2 .c_l_d_dw_type i { background: url(//s.faloo.com/novel2/downpage/type_i.png) no-repeat; display: inline-block; width: 0.58rem; height: 0.63rem; background-size: 0.58rem 0.63rem; position: absolute; top: -0.02rem; right: -0.02rem; }
+.center .c_left .c_l_detail .c_l_d_down2 .c_l_d_dw_type .c_l_d_dw_type_1 { display: block; font-size: 0.22rem;  font-weight: 400; color: rgba(102,102,102,1); margin-top: 0.21rem; position: relative; line-height: 0.36rem; }
+.center .c_left .c_l_detail .c_l_d_down2 .c_l_d_dw_type .c_l_d_dw_type_2 { display: block; font-size: 0.16rem;  font-weight: 400; color: rgba(153,153,153,1); margin-top: 0.13rem; line-height: 0.30rem; }
+.center .c_left .c_l_d_down3 { font-size: 0.22rem;  font-weight: 400; color: rgba(4,121,54,1); margin-bottom: 0.15rem; }
+.center .c_left .c_l_d_down3 a:hover { color: #FF6600; }
+.center .c_left .c_l_d_down4 { font-size: 0.22rem;  font-weight: 400; color: rgba(4,121,54,1); margin-bottom: 0.15rem; margin-top: 0.3rem; }
+.center .c_left .c_l_d_down3 a:hover { color: #FF6600; }
+.center .c_left .c_l_line { width: 8.68rem; height: 0.10rem; background: rgba(246,249,252,1); margin-top: 0.2rem; margin-bottom: 0.2rem; }
+.center .c_left .c_l_remark { width: 8.68rem; overflow: hidden; }
+.center .c_left .c_l_remark .c_l_r_p1 { font-size: 0.18rem;  font-weight: 400; color: rgba(153,153,153,1); }
+.center .c_left .c_l_remark .c_l_r_p2 { font-size: 0.18rem;  font-weight: 400; color: #666666; line-height: 0.36rem; }
+.center .c_left .c_l_remark .c_l_r_p2 a { color: #1CB15C; }
+.center .c_left .c_l_remark .c_l_r_p2 a:hover { color: #FF6600; }
+.center .c_left .c_l_img { background-image: url(//s.faloo.com/novel2/downpage/c_l_img.png); background-repeat: no-repeat; background-size: 8.68rem 1.50rem; width: 8.68rem; height: 1.50rem; position: relative; margin-top: 0.20rem; border-radius: 0.04rem; }
+.center .c_left .c_l_img .c_l_left { background-image: url(//s.faloo.com/novel2/downpage/c_l_left.png); background-repeat: no-repeat; background-size: 2.02rem 1.40rem; width: 2.02rem; height: 1.40rem; display: block; position: absolute; left: 0; bottom: 0; }
+.center .c_left .c_l_img .c_l_center { background-image: url(//s.faloo.com/novel2/downpage/c_l_center.png); background-repeat: no-repeat; background-size: 4.05rem 0.74rem; width: 4.05rem; height: 0.74rem; display: block; position: absolute; left: 2.02rem; top: 0.45rem; }
+.center .c_left .c_l_img .c_l_right { display: block; position: absolute; right: 0.34rem; top: 0.52rem; width: 1.69rem; height: 0.42rem; background: linear-gradient(0deg,rgba(254,143,11,1) 0%,rgba(247,198,0,1) 99%); border-radius: 0.21rem; line-height: 0.40rem; font-size: 0.22rem;  font-weight: bold; color: rgba(255,255,255,1); text-align: center; }
+.center .c_left .c_l_remark1 { width: 8.68rem; font-size: 0.20rem;  font-weight: 400; color: rgba(28,177,92,1); margin-bottom: 0.20rem; }
+.center .c_left .c_l_remark1 a { display: block; margin-top: 0.20rem; color: #1CB15C; }
+.center .c_left .c_l_remark1 a:hover { color: #FF6600; }
+/*右浮动1*/
+.center .c_right {width: 2.58rem;float: right;overflow: hidden;position: relative;background: #FFFFFF;box-shadow: 0 0 0.1rem 0 #E7E7E7;margin-top: 0.2rem;border: 0.01rem solid #ededed;}
+.center .c_right .c_r_title1 {width: 100%;height: 0.4rem;line-height: 0.4rem;overflow: hidden;box-shadow: 0 0rem 0.1rem 0 #E7E7E7;/* background: linear-gradient(180deg,#f4fff4 0%,#fff 100%); */background: url(//s.faloo.com/novel2/CategoryIndex/titleback.jpg) no-repeat;background-size: 12rem 100%;}
+.center .c_right .c_r_title1 .c_r_t_line {width: 0.04rem;height: 0.2rem;background: linear-gradient(0deg,rgba(29,181,95,1),rgba(64,215,129,1));border-radius: 0.2rem;float: left;margin: 0.10rem 0.06rem 0 0.10rem;}
+.center .c_right .c_r_title1 .c_r_t_left { width: 1.7rem; font-size: 0.18rem;  font-weight: 400; color: rgba(51,51,51,1); float: left; }
+.center .c_right .c_r_title1 .c_r_t_right { width: 0.5rem; float: right; text-align: right; }
+.center .c_right .c_r_title1 .c_r_t_right a { margin-right: 0.06rem; font-size: 0.14rem;  font-weight: 400; color: rgba(102,102,102,1); }
+.center .c_right .c_r_title1 .c_r_t_right a:hover { color: #FF6600; }
+.center .c_right .c_r_detail1 { list-style: none; padding: 0 0.06rem 0 0.06rem; overflow: hidden; margin: 0.04rem 0 0 0; }
+.center .c_right .c_r_detail1 .c_r_d_li { line-height: 0.40rem; overflow: hidden; border-bottom: 0.01rem dashed rgba(230,230,230,1); }
+.center .c_right .c_r_detail1 .noborder { border: 0; }
+.center .c_right .c_r_detail1 .c_r_d_li .c_r_d_li_number1 { width: 0.18rem; height: 0.18rem; line-height: 0.18rem; background: #FF6600; border-radius: 0.02rem; display: block; font-size: 0.14rem;  font-weight: 400; color: #FFFFFF; text-align: center; float: left; margin-top: 0.10rem; }
+.center .c_right .c_r_detail1 .c_r_d_li .c_r_d_li_number2 { width: 0.18rem; height: 0.18rem; line-height: 0.18rem; background: #808080; border-radius: 0.02rem; display: block; font-size: 0.14rem;  font-weight: 400; color: #FFFFFF; text-align: center; float: left; margin-top: 0.10rem; }
+.center .c_right .c_r_detail1 .c_r_d_li .c_r_d_li_img { width: 0.66rem; height: 0.94rem; border-radius: 0.04rem; display: block; float: left; margin-top: 0.10rem; margin-left: 0.07rem; margin-right: 0.07rem; cursor: pointer; }
+.center .c_right .c_r_detail1 .c_r_d_li .c_r_d_li_title {display: block;width: 1.43rem;line-height: 0.16rem;float: left;font-size: 0.16rem;font-weight: 400;color: rgba(51,51,51,1);margin-top: 0.15rem;overflow: hidden;/* text-overflow: ellipsis; */white-space: nowrap;}
+.center .c_right .c_r_detail1 .c_r_d_li .c_r_d_li_title:hover { color: #FF6600; }
+.center .c_right .c_r_detail1 .c_r_d_li .c_r_d_li_author { display: block; width: 1.43rem; float: left; font-size: 0.16rem;  font-weight: 400; color: rgba(153,153,153,1); line-height: 0.17rem; margin-top: 0.08rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.center .c_right .c_r_detail1 .c_r_d_li .c_r_d_li_author i { background: url("//s.faloo.com/novel2/Index/rentou.png") no-repeat; background-size: 0.17rem 0.17rem; width: 0.17rem; height: 0.17rem; display: inline-block; position: relative; top: 0.03rem; margin-right: 0.03rem; }
+.center .c_right .c_r_detail1 .c_r_d_li .c_r_d_li_author:hover { color: #FF6600; float: left; }
+.center .c_right .c_r_detail1 .c_r_d_li .c_r_d_li_new { display: block; width: 1.43rem; float: left; font-size: 0.14rem;  font-weight: 400; color: rgba(102,102,102,1); line-height: 0.14rem; margin-top: 0.11rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.center .c_right .c_r_detail1 .c_r_d_li .c_r_d_li_new:hover { color: #FF6600; }
+.center .c_right .c_r_detail1 .c_r_d_li .c_r_d_li_class { display: block; width: 1.43rem; float: left; font-size: 0.14rem;  font-weight: 400; color: rgba(153,153,153,1); line-height: 0.14rem; margin-top: 0.11rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 0.115rem; }
+.center .c_right .c_r_detail1 .c_r_d_li .c_r_d_li_title1 {font-size: 0.16rem;font-weight: 400;color: rgba(51,51,51,1);display: block;float: left;line-height: 0.16rem;margin-top: 0.10rem;margin-left: 0.06rem;max-width: 1.55rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.center .c_right .c_r_detail1 .c_r_d_li .c_r_d_li_title1:hover { color: #FF6600; }
+.center .c_right .c_r_detail1 .c_r_d_li .c_r_d_li_class1 { font-size: 0.14rem;  font-weight: 400; color: rgba(153,153,153,1); display: block; float: right; line-height: 0.14rem; margin-top: 0.13rem; margin-bottom: 0.13rem; max-width: 0.62rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.center .c_right .c_r_detail1 .c_r_d_li1 { text-align: center; line-height: 0.38rem; }
+.center .c_right .c_r_detail1 .c_r_d_li1 a { display: inline-block; font-size: 0.14rem;  font-weight: 400; color: rgba(102,102,102,1); }
+.center .c_right .c_r_detail1 .c_r_d_li1 a:hover { color: #FF6600; }
+.height1 { height: 9.42rem; }
+/**/
+.body { background: #F6F9FC; }
+.center .c_center {width: 12.0rem;/* overflow: hidden; */padding-top: 0.20rem;}
+.center .c_center .c_c_title {width: 12rem;overflow: hidden;padding-top: 0.22rem;}
+.center .c_center .c_c_title .c_c_t_line {width: 0.04rem;height: 0.2rem;background: linear-gradient(0deg,rgba(29,181,95,1),rgba(64,215,129,1));border-radius: 0.2rem;float: left;margin: 0.03rem 0.06rem 0 0.10rem;}
+.center .c_center .c_c_title .c_c_t_left { font-size: 0.18rem;  font-weight: 400; color: rgba(51,51,51,1); float: left; }
+.center .c_center .c_c_title .c_c_t_right { font-size: 0.14rem;  font-weight: 400; color: rgba(102,102,102,1); float: right; }
+.center .c_center .c_c_detail {overflow: hidden;margin-top: 0rem;width: 12.0rem;padding-bottom: 0.2rem;}
+.center .c_center .c_c_detail .c_c_d_data1 {width: 5.88rem;height: 2.01rem;background: rgba(255,255,255,1);border-radius: 0.05rem;box-shadow: 0 0 0.1rem 0 #E7E7E7;float: left;margin-top: 0.20rem;margin-left: 0rem;border: 0.01rem solid #ededed;}
+.center .c_center .c_c_detail .c_c_d_data1:nth-child(2n+2) {float: right;}
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_img { width: 1.27rem; height: 1.80rem; border-radius: 0.05rem; margin: 0.1rem 0 0 0.1rem; float: left; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_img a { width: 1.27rem; height: 1.80rem; border-radius: 0.05rem; display: block; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_img img { width: 1.27rem; height: 1.80rem; border-radius: 0.04rem; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_title { float: left; font-size: 0.18rem;  font-weight: 400; color: rgba(51,51,51,1); width: 4.3rem; margin-top: 0.15rem; margin-left: 0.10rem; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_title a { }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_title a:hover { color: #ff6600; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_author { float: left; font-size: 0.16rem;  font-weight: 400; color: rgba(153,153,153,1); margin-left: 0.10rem; margin-top: 0.10rem; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_author i { background: url("//s.faloo.com/novel2/Index/rentou.png") no-repeat; background-size: 0.17rem 0.17rem; width: 0.17rem; height: 0.17rem; display: inline-block; margin-right: 0.04rem; position: relative; top: 0.07rem; float: left; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_author a { display: inline-block; max-width: 2rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; float: left; position: relative; top: 0.04rem; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_author a:last-child { float: none; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_author a:hover { color: #ff6600; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_data { float: left; width: 4.05rem; line-height: 0.32rem; font-size: 0.14rem;  font-weight: 400; color: rgba(102,102,102,1); margin-left: 0.10rem; margin-top: 0.07rem; text-indent: 0.3rem; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_data a { }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_data a:hover { color: #ff6600; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_data1 { float: left; margin-top: 0.10rem; margin-left: 0.10rem; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_data1 .c_c_d_da_da_1 { width: 1.02rem; background: #FF6600; border-radius: 0.14rem; font-size: 0.14rem;  font-weight: 400; color: rgba(255,255,255,1); display: inline-block; text-align: center; padding-top: 0.05rem; padding-bottom: 0.05rem; border: 0.01rem solid #FF6600; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_data1 .c_c_d_da_da_1:hover { }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_data1 .c_c_d_da_da_2 { width: 1.02rem; background: #038139; border-radius: 0.14rem; font-size: 0.14rem;  font-weight: 400; color: rgba(255,255,255,1); display: inline-block; text-align: center; padding-top: 0.05rem; padding-bottom: 0.05rem; border: 0.01rem solid #038139; margin-left: 0.2rem; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_data1 .c_c_d_da_da_2:hover { }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_data1 .c_c_d_da_da_3 { width: 1.02rem; background: #FFFFFF; border-radius: 0.14rem; font-size: 0.14rem;  font-weight: 400; color: #038139; display: inline-block; text-align: center; padding-top: 0.05rem; padding-bottom: 0.05rem; border: 0.01rem solid #038139; margin-left: 0.2rem; }
+.center .c_center .c_c_detail .c_c_d_data1 .c_c_d_da_data1 .c_c_d_da_da_3:hover { }
+/*****************************下载页面end*********************************/
+
+/*****************************下载页面结果begin*********************************/
+.top .t_bottom { width: 12.0rem; overflow: hidden; height: 1.04rem; }
+.top .t_bottom .t_b_logo { display: block; width: 1.78rem; overflow: hidden; float: left; margin-top: 0.20rem; margin-bottom: 0.20rem; }
+.top .t_bottom .t_b_logo img { width: 1.78rem; height: 0.60rem; }
+.top .t_bottom .t_b_line { width: 0.01rem; height: 0.30rem; background: rgba(204,202,202,1); float: left; margin: 0.36rem 0.30rem 0 0.36rem; }
+.top .t_bottom .t_b_title { font-size: 0.24rem;  font-weight: 400; color: rgba(102,102,102,1); margin-top: 0.34rem; display: block; float: left; margin-right: 3.47rem; }
+.top .t_bottom .t_b_type { font-size: 0.20rem;  font-weight: 400; color: rgba(102,102,102,1); display: block; float: left; margin-left: 0.65rem; margin-top: 0.33rem; padding: 0.03rem 0.09rem; border-radius: 0.05rem; }
+.top .t_bottom .t_b_type:hover { color: #FFFFFF; background-color: rgba(4,121,54,1); }
+
+.center .c_skip {width: 11.98rem;margin-top: 0.20rem;background: #FFFFFF;box-shadow: 0 0 0.1rem 0 #E7E7E7;margin-bottom: 0.125rem;overflow: hidden;border: 0.01rem solid #ededed;}
+.center .c_skip .c_s_title {height: 0.40rem;/*background: linear-gradient(180deg,#f4fff4 0%,#fff 100%);*/background: url(//s.faloo.com/novel2/CategoryIndex/titleback.jpg) no-repeat;background-size: 12rem 100%;box-shadow: 0 0rem 0.1rem 0 #E7E7E7;}
+.center .c_skip .c_s_title .c_s_t_line {width: 0.04rem;height: 0.20rem;background: linear-gradient(0deg,rgba(29,181,95,1),rgba(64,215,129,1));border-radius: 0.02rem;float: left;margin: 0.09rem 0.06rem 0 0.10rem;}
+.center .c_skip .c_s_title .c_s_t_left { float: left; font-size: 0.17rem;  font-weight: 400; color: rgba(51,51,51,1); margin-top: 0.07rem; }
+.center .c_skip .c_s_left { border: 0.04rem solid rgba(255,255,255,1); border-radius: 0.04rem; overflow: hidden; float: left; margin: 0.30rem 0.30rem 0.2rem 0.40rem; }
+.center .c_skip .c_s_left a { width: 2.26rem; height: 3.18rem; display: block; }
+.center .c_skip .c_s_left a img { width: 2.26rem; height: 3.18rem; border-radius: 0.04rem; }
+.center .c_skip .c_s_right { float: left; overflow: hidden; margin-top: 0.48rem; }
+.center .c_skip .c_s_right .c_s_r_right1 { font-size: 0.22rem;  font-weight: 400; color: rgba(51,51,51,1); display: block; }
+.center .c_skip .c_s_right .c_s_r_right1 a:hover { color: #FF6600; }
+.center .c_skip .c_s_right .c_s_r_right2 { font-size: 0.22rem;  font-weight: 400; color: rgba(4,121,54,1); margin-top: 0.25rem; position: relative; padding-left: 0.80rem; line-height: 0.65rem; }
+.center .c_skip .c_s_right .c_s_r_right2 i { background-image: url(//s.faloo.com/novel2/NovelDetail/c_s_r_right2_i.png); background-repeat: no-repeat; background-size: 0.64rem 0.65rem; width: 0.64rem; height: 0.65rem; display: inline-block; position: absolute; left: 0; }
+.center .c_skip .c_s_right .c_s_r_line { width: 8.23rem; height: 0.01rem; border-bottom: 0.01rem dashed rgba(204,202,202,1); margin-top: 0.25rem; }
+.center .c_skip .c_s_right .c_s_r_right3 { overflow: hidden; font-size: 0.20rem;  font-weight: 400; color: rgba(153,153,153,1); margin-top: 0.35rem; }
+.center .c_skip .c_s_right .c_s_r_right3 .c_s_r_r_author { float: left; font-size: 0.20rem; margin-right: 0.40rem; }
+.center .c_skip .c_s_right .c_s_r_right3 .c_s_r_r_author a { color: #666666; }
+.center .c_skip .c_s_right .c_s_r_right3 .c_s_r_r_author a:hover { color: #FF6600; }
+.center .c_skip .c_s_right .c_s_r_right3 .c_s_r_r_line { float: left; width: 0.01rem; height: 0.21rem; background-color: #666666; margin-right: 0.40rem; position: relative; top: 0.03rem; }
+.center .c_skip .c_s_right .c_s_r_right3 .c_s_r_r_time { float: left; font-size: 0.20rem; margin-right: 0.40rem; }
+.center .c_skip .c_s_right .c_s_r_right3 .c_s_r_r_time span { color: #666666; }
+.center .c_skip .c_s_right .c_s_r_right3 .c_s_r_r_class { float: left; font-size: 0.20rem; }
+.center .c_skip .c_s_right .c_s_r_right3 .c_s_r_r_class a { color: #666666; }
+.center .c_skip .c_s_right .c_s_r_right3 .c_s_r_r_class a:hover { color: #FF6600; }
+.center .c_skip .c_s_right .c_s_r_right4 { margin-top: 0.25rem; font-size: 0.20rem;  font-weight: 400; color: rgba(153,153,153,1); }
+.center .c_skip .c_s_right .c_s_r_right4 a { color: #666666; }
+.center .c_skip .c_s_right .c_s_r_right4 a:hover { color: #FF6600; }
+.center .c_skip .c_s_line { clear: both; width: 11.20rem; height: 0.1rem; background: rgba(246,249,252,1); }
+.center .c_skip .c_s_remark { font-size: 0.18rem;  font-weight: 400; color: #666666; line-height: 0.42rem; overflow: hidden; width: 10.73rem; margin-left: 0.40rem; margin-top: 0.07rem; margin-bottom: 0.24rem; }
+.center .c_skip .c_s_remark .c_skipremark_title { color: #999999; }
+/*****************************下载页面结果end*********************************/
+
+/*返回小说详情面页的按钮*/
+.backInfoBtn { background: url(//s.faloo.com/novel2/BuyBook/backInfo.png) no-repeat left center; background-size: 0.25rem 0.25rem; height: 0.25rem; padding-left: 0.30rem; position: absolute; top: 0.05rem; right: 0; line-height: 0.25rem; color: #1CB15C; font-size: 0.16rem; }
+
+* { -webkit-text-size-adjust: none; }
+/*----------------------------------虚化代码开始----------------------------------*/
+
+/*.line_gaizi { height: 0.02rem; width: 11.55rem; position: absolute; background-color: #fff; top: 1.18rem; z-index: 2; }*/
+.XhDiv { display: none; }
+/*.Xh-bg { height: 10rem; }*/
+
+
+
+/*特殊div样式*/
+.XuxianDiv { width: 100%; border-bottom: 0.01rem dashed #CCCCCC; }
+.lvdian { width: 0.04rem; height: 0.2rem; background: linear-gradient(0deg,rgba(28,177,92,1) 0%,rgba(43,211,115,1) 100%); border-radius: 0.02rem; position: absolute; left: 0.06rem; top: 0.1rem; }
+.divLV { width: 0.04rem; height: 0.2rem; background: #09843E; position: absolute; top: 0.1rem; }
+.TPbg01 { background: url(//s.faloo.com/novel2/Index/toupiao01.png) no-repeat right 0.1rem bottom #F6F9FC; }
+.TPbg02 { background: url(//s.faloo.com/novel2/Index/toupiao02.png) no-repeat right 0.1rem bottom #F6F9FC; }
+.TPbg03 { background: url(//s.faloo.com/novel2/Index/toupiao03.png) no-repeat right 0.1rem bottom #F6F9FC; }
+.DivBai { width: 8.8rem; background: #FFFFFF; height: 0.2rem; }
+.DivVip { width: 8.8rem; height: 0.42rem; line-height: 0.42rem; color: #FF6600; font-size: 0.15rem; text-align: center; background: #F6F9FC; }
+.DingyueBtn { width: 1.53rem; height: 0.3rem; line-height: 0.32rem; font-size: 0.14rem; text-align: center; color: #09843E; border: 0.01rem solid #09843E; border-radius: 0.16rem; float: right; margin-right: 0.1rem; cursor: pointer; }
+.VipBtn { width: 0.95rem; height: 0.32rem; line-height: 0.32rem; font-size: 0.14rem; text-align: center; color: #FFFFFF; background: #FF6600; border-radius: 0.16rem; float: right; cursor: pointer; }
+/*特殊div样式 End*/
+
+
+
+/*----------------------------------阅读页头部----------------------------------*/
+.nr_top { width: 100%; position: relative; }
+.nr_top .t_box { max-width: 11.8rem; height: 0.9rem; padding: 0px 0.1rem; color: #666666; }
+.nr_top .t_b_left { width: 1.5rem; height: 0.7rem; float: left; padding-top: 0.2rem; }
+.nr_top .t_b_left img { width: 1.5rem; height: 0.5rem; }
+.nr_top .t_b_center { width: 5.85rem; height: 0.7rem; float: left; padding-top: 0.2rem; line-height: 0.5rem; position: relative; }
+.nr_top .t_b_center .t_b_c_sanjiaoImg { width: 0.12rem; height: 0.06rem; }
+.nr_top .t_b_center a { margin-left: 0.3rem; font-size: 0.16rem; }
+.nr_top .t_b_center .t_b_c_category { position: absolute; z-index: 1; width: 0.9rem; text-align: center; top: 0.55rem; left: 0.23rem; padding-top: 0.1rem; display: none; }
+.nr_top .t_b_center .t_b_c_category ul { list-style-type: none; margin: 0; padding: 0; background-color: #fff; border-top: solid 0.02rem #FF6600; }
+.nr_top .t_b_center .t_b_c_category ul li { line-height: 0.4rem; border-bottom: 0.01rem dashed #D9D9D9; }
+.nr_top .t_b_center .t_b_c_category ul li:last-child { border-bottom: none; }
+.nr_top .t_b_center .t_b_c_category ul li a { margin: 0; }
+.nr_top .t_b_right { width: 4.4rem; height: 0.7rem; float: right; padding-top: 0.2rem; line-height: 0.5rem; font-size: 0.16rem; text-align: right; }
+.nr_top .t_b_right .t_b_r_item { margin-left: 0.1rem; }
+.nr_top .t_b_right .t_b_r_item .t_b_r_i_zuijinimg { width: 0.18rem; height: 0.18rem; }
+.nr_top .t_b_right .t_b_r_item .t_b_r_i_app { width: 0.11rem; height: 0.16rem; }
+.nr_top .t_b_right .t_b_r_item .t_b_r_i_loginimg { width: 0.12rem; height: 0.15rem; top: 0.01rem; }
+.nr_top .t_b_right .t_b_r_item .t_b_r_i_searchimg { width: 0.19rem; height: 0.19rem; }
+.nr_top .t_b_right .t_b_r_item .t_b_r_i_sanjiaoImg { width: 0.12rem; height: 0.06rem; }
+.nr_top .t_b_right .t_b_r_item .bodyBorderShadowAPP { width: 1.2rem; height: 1.2rem; border: 0.1rem solid #fff; display: none; position: absolute; top: 0.25rem; left: 0px; z-index: 10; }
+
+
+.nr_top .t_b_r_item img { position: relative; top: 0.03rem; left: 0px; }
+
+.nt_btnFold { background: url(//s.faloo.com/novel2/novelRead/btnFold.png) no-repeat center center; background-size: 0.25rem 0.25rem; width: 0.25rem; height: 0.25rem; position: absolute; top: 0.06rem; right: 0.1rem; display: none; cursor: pointer; }
+.nt_btnFoldClose { background: url(//s.faloo.com/novel2/novelRead/btnFoldClose.png) no-repeat center center; background-size: 0.25rem 0.25rem; width: 0.25rem; height: 0.25rem; }
+#er a img { top: -0.01rem; }
+/*----------------------------------阅读页头部结束----------------------------------*/
+
+
+
+/*----------------------------------阅读页内容区域--------------------------------------------------*/
+
+.nr_center { max-width: 11.8rem; padding: 0px 0.1rem; }
+.nr_center .c_left { max-width: 11.8rem; float: left; position: relative; padding: 0px 0.1rem; margin-bottom: 0.1rem; }
+.nr_center .nav { width: 100%; height: 0.4rem; font-size: 0.16rem; color: #808080; line-height: 0.32rem; overflow: hidden; }
+.nr_center .c_left .c_l_title { text-align: center; font-size: 0.24rem; /*height: 0.6rem;*/ line-height: 0.5rem; color: #333; /*overflow: hidden;*/ }
+.nr_center .c_left .c_l_title h1 { font-size: inherit;line-height: 0.5rem;color: inherit;font-weight: inherit;}
+.nr_center .c_left .c_l_info { text-align: center; height: 0.35rem; line-height: 0.3rem; font-size: 0.14rem; font-weight: bold; overflow: hidden; position: relative; padding-top: 0.05rem; }
+.nr_center .c_left .c_l_info .c_l_i_item { display: inline-block; margin: 0px 0.3rem 0px 0.1rem; color: #999; }
+.nr_center .c_left .c_l_info .c_l_i_item img { position: relative; top: 0.03rem; left: 0px; }
+.nr_center .c_left .c_l_info .c_l_i_item .c_l_i_i_vipImg { width: 0.18rem; height: 0.16rem; }
+.nr_center .c_left .c_l_info .c_l_i_item .c_l_i_i_rentou { width: 0.18rem; height: 0.18rem; }
+.nr_center .c_left .c_l_info .c_l_i_button, .waterfall_xuanfu { position: relative; float: inherit; width: 1rem; height: 0.3rem; bottom: 0.3rem; right: -5.2rem; border: solid 0.01rem #09843E; color: #09843E; border-radius: 0.05rem; cursor: pointer; font-size: 0.14rem; }
+.waterfall_xuanfu { text-align: center; display: none; top: 0.06rem; right: 0.55rem; position: absolute; width: 0.5rem; height: 0.25rem; line-height: 0.25rem; }
+.waterfall_xuanfu.select { color: red; }
+.nr_center .c_left .c_l_infoLine { height: 0.02rem; background-color: #fff; margin-top: 0.06rem; }
+
+.nr_center .c_left .noveContent { max-width: 9.6rem; font-size: 0.16rem; line-height: 0.25rem; color: #333333; position: relative; min-height: 4rem; margin-top: 0.2rem; word-wrap: break-word; padding-bottom: 0.1rem; }
+.nr_center .c_left .tips { font-size: 0.14rem; color: #09843E; background-color: #E3EAF1; text-align: center; line-height: 0.43rem; margin: 0.1rem auto; position: relative; margin-top: 0.35rem; }
+.nr_center .c_left .tips h2 {color:inherit; font-weight:inherit;font-size:inherit; }
+
+.nr_center .c_left .c_other { font-size: 0.14rem; position: relative; }
+.nr_center .c_left .c_other .c_o_item { border-bottom: 0.01rem dashed #CCCCCC; }
+.nr_center .c_left .c_other .c_o_item ul { list-style-type: none; padding: 0; margin: 0; }
+.nr_center .c_left .c_other .c_o_item ul li { display: inline-block; height: 0.34rem; line-height: 0.34rem; padding: 0.1rem 0.15rem 0.1rem 0; font-size: 0.14rem; }
+.nr_center .c_left .c_other .c_o_item ul li:last-child { padding-right: 0; }
+.nr_center .c_left .c_other .c_o_item .c_o_i_tab { width: 0.8rem; height: 0.34rem; background: url("//s.faloo.com/novel2/novelRead/juxing.png") no-repeat center center; color: #fff; text-align: center; background-size: 0.8rem 0.34rem; font-size: 0.14rem; }
+.nr_center .c_left .c_other .c_o_item img { position: relative; top: 0.08rem; margin-right: 0.06rem; }
+.nr_center .c_left .c_other .c_o_item .border { border-top-left-radius: 0.1rem; height: 0.31rem; line-height: 0.31rem; border: solid 0.01rem #e5e5e5; border-bottom-right-radius: 0.1rem; text-align: center; position: relative; width: 1.62rem; font-size: 0.14rem; }
+.nr_center .c_left .c_other .c_o_item .border img { right: -0.05rem; position: absolute; top: 0.01rem; }
+.nr_center .c_left .c_other .c_o_item:last-child { border: none; }
+/*.nr_center .c_left .c_other .c_o_item:last-child .border { border: solid 0.01rem #FFC29A; }*/
+.nr_center .c_left .c_other .c_o_item .c_o_i_weixinimg { width: 0.25rem; height: 0.25rem; }
+.nr_center .c_left .c_other .c_o_item .c_o_i_zhifubaonimg { width: 0.25rem; height: 0.25rem; }
+.nr_center .c_left .c_other .c_o_item .c_o_i_wangyinimg { width: 0.26rem; height: 0.26rem; }
+.nr_center .c_left .c_other .c_o_item .c_o_i_shoujiimg { width: 0.26rem; height: 0.26rem; }
+.nr_center .c_left .c_other .c_o_item .c_o_i_gameimg { width: 0.26rem; height: 0.26rem; }
+.nr_center .c_left .c_other .c_o_item .c_o_i_duanxinimg { width: 0.27rem; height: 0.27rem; }
+
+.nr_center .c_left .c_other .c_o_item .c_o_i_androidimg { width: 0.27rem; height: 0.26rem; }
+.nr_center .c_left .c_other .c_o_item .c_o_i_qiandaoimg { width: 0.26rem; height: 0.26rem; }
+.nr_center .c_left .c_other .c_o_item .c_o_i_iphoneimg { width: 0.25rem; height: 0.25rem; }
+.nr_center .c_left .c_other .c_o_item .c_o_i_shouji1img { width: 0.25rem; height: 0.26rem; }
+.nr_center .c_left .c_other .c_o_item .c_o_i_sign1img { width: 0.1rem; height: 0.16rem; }
+.nr_center .c_left .c_btns { margin-top: 0.3rem; position: relative; }
+.nr_center .c_left .c_b_dashang { width: 1.8rem; height: 0.4rem; background-color: #FF6600; border-radius: 0.2rem; text-align: center; font-size: 0.18rem; line-height: 0.4rem; color: #fff; cursor: pointer; }
+.nr_center .c_left .c_b_dashang img { position: relative; top: -0.02rem; vertical-align: middle; margin-right: 0.15rem; }
+.nr_center .c_left .c_b_jubao { width: 1.1rem; height: 0.22rem; position: absolute; font-size: 0.18rem; color: #9DBFAB; top: 0.12rem; right: 0.3rem; }
+.nr_center .c_left .c_b_jubao img { position: relative; top: -0.02rem; vertical-align: middle; margin-right: 0.05rem; }
+
+.nr_center .c_left .c_btns2 { margin-top: 0.5rem; }
+.nr_center .c_left .c_btns2 div { display: inline-block; width: 30%; height: 100%; text-align: center; margin-right: 4%; line-height: 0.2rem; font-size: 0.18rem; color: #666666; }
+.nr_center .c_left .c_btns2 div:last-child { margin-right: 0; }
+.nr_center .c_left .c_btns2 div img { vertical-align: middle; margin-right: 0.1rem; position: relative; top: -0.01rem; }
+
+.nr_center .c_left .c_tips { color: #999999; font-size: 0.16rem; text-align: center; margin-top: 0.2rem; height: 0.45rem; border-bottom: solid 0.02rem #E6E6E6; }
+
+.nr_TitleDiv { width: 94%; height: 0.3rem; }
+
+/*没有小说章节查看权限时的样式*/
+.nr_center .c_left .noveContent { max-width: 9.6rem; position: relative;  }
+.nr_center .c_left .noveContent p{ text-indent:2em;}
+.nr_center .c_left .noveContent .c_c1 { font-size: 0.2rem; color: #999999; text-align: center; margin-top: 0.34rem; }
+.nr_center .c_left .noveContent .c_c2 { font-size: 0.24rem; color: #333333; text-align: center; margin-top: 0.2rem; }
+.nr_center .c_left .noveContent .c_c3 { font-size: 0.18rem; text-align: center; line-height: 0.35rem; color: #fff; margin-top: 0.20rem; }
+.nr_center .c_left .noveContent .c_c3 a { display: inline-block; vertical-align: middle; height: 0.36rem; padding: 0 0.2rem; }
+.nr_center .c_left .noveContent .c_c3 a:hover { color: #fff; }
+.nr_center .c_left .noveContent .c_c3 .c_c3_d1 { background-color: #FF6600; border-radius: 0.05rem; }
+.nr_center .c_left .noveContent .c_c3 .c_c3_d2 { background-color: #09843E; border-radius: 0.05rem; margin-left: 0.3rem; }
+.nr_center .c_left .noveContent .c_c4 { margin-top: 0.6rem; }
+.nr_center .c_left .noveContent .c_c4 .c_c4_item { border-bottom: 0.01rem dashed #CCCCCC; padding: 0.1rem 0; color: #999999; }
+.nr_center .c_left .noveContent .c_c4 .c_c4_item .c_c4_i_l { display: inline-block; width: 80%; min-height: 0.36rem; line-height: 0.36rem; padding-right: 0.2rem; }
+.nr_center .c_left .noveContent .c_c4 .c_c4_item .c_c4_i_l span:first-child { font-size: 0.2rem; color: #333333; margin-right: 0.1rem; }
+.nr_center .c_left .noveContent .c_c4 .c_c4_item .c_c4_i_l a { color: #FF6600; margin: 0 0.1rem; }
+.nr_center .c_left .noveContent .c_c4 .c_c4_item .c_c4_i_r { display: inline-block; width: 1.3rem; height: 0.36rem; border-radius: 0.18rem; color: #FF6600; border: 0.01rem solid rgba(255,102,0,1); text-align: center; line-height: 0.36rem; vertical-align: top; }
+.nr_center .c_left .noveContent .c_c4 .c_c4_item .hui { border: 0.01rem solid #333; color: #666; }
+.nr_center .c_left .noveContent .c_c5 { font-size: 0.18rem; color: #4A8061; line-height: 0.36rem; margin: 0.15rem 0 0.4rem; }
+.nr_center .c_left .noveContent p { margin:0;padding:0;font-family:inherit;}
+
+/*原有调宽度样式*/
+.nr_center .c_left .noveContent .con_img .con_ts { color: #999; margin-bottom: 0.2rem; }
+.nr_center .c_left .noveContent .bnt_vipwidth a { color: #038139; }
+
+/*阅读页的图片样式*/
+.con_imginfo { text-align: center; margin-top: 0.1rem; }
+.con_imginfo img { max-height: 8rem; }
+
+.nr_center .c_left .bg_readline { background-image: url("//s.faloo.com/novel2/novelRead/bgLine.png"); background-size: 0.62rem 0.22rem; background-position: left top 0.1rem; }
+.nr_center .c_left .bg_readlinevip { background-image: url("//s.faloo.com/novel2/novelRead/bgLine.png"); background-size: 0.62rem 0.3rem; background-position: left top 0.1rem; }
+.next_page_btn { font-size: 0.26rem; }
+
+.con_img { display: block; height: auto; width: 100%; }
+
+/*管理员阅读时管理按钮样式*/
+.c_manageBox { font-size: inherit !important; width: auto !important; }
+/*----------------------------------阅读页内容区域结束--------------------------------------------------*/
+
+
+
+/*----------------------------------悬浮工具  设置--------------------------------------------------*/
+.setBox { position: fixed; color: #038139; left: 50%; top: 7%; margin-left: -6.9rem; z-index: 99; }
+.setBox2 { margin-left: 6.2rem; top: 85%; background-color: transparent; display: none; }
+.setBox .s_item { width: 0.62rem; height: 0.5rem; border: solid 0.01rem #038139; border-radius: 0.05rem; margin-bottom: 0.1rem; text-align: center; padding-top: 0.1rem; cursor: pointer; background-color: #fff; }
+.setBox .s_item .s_i_pinglunbox { height: 0.24rem; }
+.setBox .s_item a { color: #038139; }
+.setBox .s_item div { font-size: 0.14rem; }
+.setBox .s_item a:hover { color: #038139; }
+.setBox .s_item .s_i_shujiaimg { width: 0.13rem; height: 0.13rem; }
+.setBox .s_item .s_i_dingyueimg { width: 0.13rem; height: 0.13rem; }
+.setBox .s_item .s_i_muluimg { width: 0.17rem; height: 0.13rem; }
+.setBox .s_item .s_i_shezhi { width: 0.15rem; height: 0.14rem; }
+.setBox .s_item .s_i_xianhuaImg { width: 0.17rem; height: 0.16rem; }
+.setBox .s_item .s_i_shoucangImg { width: 0.19rem; height: 0.18rem; }
+.setBox .s_item .s_i_pinglun { width: 0.18rem; height: 0.18rem; }
+.setBox .s_item .s_i_shoucangImg { width: 0.17rem; height: 0.16rem; }
+
+.setBox .setWindow { width: 5.97rem; height: 4.01rem; position: absolute; border: solid 0.01rem #038139; background-color: #fff; left: 0.7rem; /*top:0rem;*/ top: 1.93rem; border-radius: 0.05rem; padding: 0.15rem 0.25rem; }
+.setBox .setWindow ul { list-style: none; padding: 0; margin: 0; display: inline-block; }
+.setBox .setWindow .ss_title { color: #333333; font-size: 0.2rem; line-height: 0.4rem; }
+.setBox .setWindow .ss_bcolor { color: #999999; font-size: 0.18rem; margin: 0.1rem 0; }
+.setBox .setWindow .ss_bcolor li { height: 0.36rem; width: 0.36rem; float: left; margin-right: 0.23rem; line-height: 0.36rem; }
+.setBox .setWindow .ss_bcolor li:first-child { width: 1rem; margin-right: 0.1rem; }
+.setBox .setWindow .ss_bcolor li .img1 { width: 0.32rem; height: 0.32rem; opacity: 0.2; border-radius: 50%; margin: 0.02rem; }
+.setBox .setWindow .ss_bcolor li .img3 { width: 0.32rem; height: 0.32rem; border-radius: 50%; margin: 0.02rem; }
+.setBox .setWindow .ss_bcolor li.curSelect .img2 { position: absolute; left: 0.06rem; top: 0.09rem; width: 0.23rem; height: 0.17rem; }
+.setBox .setWindow .ss_bcolor li .round { border-radius: 50%; width: 0.36rem; height: 0.36rem; overflow: hidden; text-align: center; position: relative; cursor: pointer; }
+.setBox .setWindow .ss_bcolor li .round1 { border-radius: 0.2rem; width: 0.32rem; height: 0.32rem; margin: 0.02rem auto; }
+.roundColor1 { background-color: #DBEEDA; }
+.roundColor2 { background-color: #F0DEBF; }
+.roundColor3 { background-color: #E9FDFE; }
+.roundColor4 { background-color: #F6F6F6; }
+.roundColor5 { background-color: #DED6D6; }
+.roundColor6 { background-color: #FCD9D9; }
+.roundColor7 { background-color: #000000; }
+
+.setBox .setWindow .ss_fontset { margin: 0.05rem 0; }
+.setBox .setWindow .ss_fontset li:first-child { width: 1rem; margin-right: 0.1rem; border: none; text-align: left; font-size: 0.18rem; color: #999999; cursor: default; }
+.setBox .setWindow .ss_fontset li { font-size: 0.16rem; color: #666666; width: 0.6rem; height: 0.29rem; border: solid 0.01rem #CCCCCC; line-height: 0.29rem; float: left; margin-right: 0.23rem; text-align: center; border-radius: 0.04rem; cursor: pointer; }
+.setBox .setWindow .ss_fontset li:last-child { margin-right: 0; }
+.setBox .setWindow .ss_fontset li.curSelect { border-color: #FF6600; color: #FF6600; }
+
+.setBox .setWindow .ss_fontColorset { margin: 0.05rem 0; margin-bottom: 0.08rem; }
+.setBox .setWindow .ss_fontColorset li:first-child { width: 1rem; margin-right: 0.1rem; border: none; text-align: left; font-size: 0.18rem; color: #999999; cursor: default; background-color: transparent; }
+.setBox .setWindow .ss_fontColorset li { width: 0.2rem; height: 0.2rem; float: left; margin-right: 0.23rem; border-radius: 0.04rem; cursor: pointer; background-color: #333; }
+.setBox .setWindow .ss_fontColorset li.curSelect { background-image: url("//s.faloo.com/novel2/novelRead/dui.png"); background-repeat: no-repeat; background-position: center center; background-size: 0.2rem; }
+.setBox .setWindow .ss_fontColorset .bgc333333 { background-color: #333; }
+.setBox .setWindow .ss_fontColorset .bgc666666 { background-color: #666666; }
+.setBox .setWindow .ss_fontColorset .bgc999999 { background-color: #999; }
+.setBox .setWindow .ss_fontColorset .bgc09843E { background-color: #09843E; }
+.setBox .setWindow .ss_fontColorset .bgc3191B5 { background-color: #3191B5; }
+.setBox .setWindow .ss_fontColorset .bgcE56C13 { background-color: #E56C13; }
+.setBox .setWindow .ss_fontColorset .bgcFF6600 { background-color: #FF6600; }
+.setBox .setWindow .ss_fontColorset .bgc2EC2BD { background-color: #2EC2BD; }
+
+.setBox .setWindow .ss_fontColorset .bgcdf6969 { background-color: #df6969; }
+.setBox .setWindow .ss_fontColorset .bgca18434 { background-color: #a18434; }
+.setBox .setWindow .ss_fontColorset .bgc6b6b64 { background-color: #6b6b64; }
+.setBox .setWindow .ss_fontColorset .bgc356988 { background-color: #356988; }
+.setBox .setWindow .ss_fontColorset .bgc40397c { background-color: #40397c; }
+
+
+
+.setBox .setWindow .ss_dingYue { font-size: 0.18rem; color: #999999; line-height: 0.24rem; margin-top: 0.05rem; }
+.setBox .setWindow .ss_dingYue .btn_panel .bt_state { margin-left: 0.1rem; color: #d2d2d2; }
+.setBox .setWindow .ss_dingYue .btn_switch { border: solid 0.01rem #d2d2d2; border-radius: 0.12rem; display: inline-block; width: 0.6rem; height: 0.22rem; position: relative; vertical-align: top; cursor: pointer; }
+.setBox .setWindow .ss_dingYue .btn_switch i { display: inline-block; width: 0.235rem; height: 0.235rem; border-radius: 50%; position: relative; top: -0.01rem; left: 0.37rem; background-color: #d2d2d2; }
+.setBox .setWindow .ss_dingYue .btn_no .btn_switch { border: solid 0.01rem #FF6600; }
+.setBox .setWindow .ss_dingYue .btn_no .btn_switch i { left: 0rem; background-color: #FF6600; }
+.setBox .setWindow .ss_dingYue .btn_no .bt_state { color: #FF6600; }
+.setBox .setWindow .ss_dingYue .btn_tips { font-size: 0.16rem; margin-left: 0.15rem; }
+.setBox .setWindow .ss_btns { font-size: 0.2rem; text-align: center; line-height: 0.35rem; margin-top: 0.2rem; }
+.setBox .setWindow .ss_btns .ss_b_save { display: inline-block; color: #fff; background-color: #09843E; width: 1.34rem; height: 0.38rem; border-radius: 0.04rem; vertical-align: top; cursor: pointer; }
+.setBox .setWindow .ss_btns .ss_b_cancel { display: inline-block; width: 1.34rem; height: 0.36rem; border: 0.01rem solid rgba(9,132,62,1); border-radius: 0.04rem; color: #09843E; vertical-align: top; margin-left: 0.6rem; cursor: pointer; }
+.setBox .setWindow .ss_close { width: 0.23rem; height: 0.23rem; position: absolute; top: 0.25rem; right: 0.25rem; cursor: pointer; }
+.setBox .setWindow .ss_close img { width: 0.23rem; height: 0.23rem; }
+
+.setBox .setWindow .ss_readline { font-size: 0.18rem; color: #999999; line-height: 0.24rem; margin-top: 0.05rem; margin-bottom: 0.15rem; }
+.setBox .setWindow .ss_readline .btn_switch { border: solid 0.01rem #d2d2d2; border-radius: 0.12rem; display: inline-block; width: 0.6rem; height: 0.22rem; position: relative; vertical-align: top; cursor: pointer; }
+.setBox .setWindow .ss_readline .btn_switch i { display: inline-block; width: 0.235rem; height: 0.235rem; border-radius: 50%; position: relative; top: -0.01rem; left: 0.37rem; background-color: #d2d2d2; }
+.setBox .setWindow .ss_readline .btn_panel .bt_state { margin-left: 0.1rem; color: #d2d2d2; }
+.setBox .setWindow .ss_readline .btn_no .btn_switch { border: solid 0.01rem #FF6600; }
+.setBox .setWindow .ss_readline .btn_no .btn_switch i { left: 0rem; background-color: #FF6600; }
+.setBox .setWindow .ss_readline .btn_no .bt_state { color: #FF6600; }
+/*----------------------------------悬浮工具设置结束--------------------------------------------------*/
+
+
+.moduleTitle { height: 0.4rem; line-height: 0.4rem; font-size: 0.18rem; position: relative; padding-left: 0.2rem; color: #333; }
+.moduleTitle h3 { font-size:inherit; font-weight:inherit; color:inherit; margin: 0; padding: 0; display: inline;}
+.moduleTitle .lvdian { height: 0.22rem; }
+.moduleTitle .c_t_btnall { float: right; color: #666; }
+.c_newDaShang .c_title .lvdian { left: 0; }
+.c_newDaShang .c_title { padding-left: 0.1rem; }
+/*粉丝最新打赏*/
+.c_newDaShang { margin-top: 0.2rem; }
+/*.c_newDaShang .c_title { height: 0.4rem; line-height: 0.4rem; font-size: 0.16rem; position: relative; padding-left: 0.2rem; color: #333; }
+.c_newDaShang .c_title .c_t_btnall { float: right; color: #666; }*/
+.c_newDaShang .c_n_list { min-height: 3.65rem; margin-top: 0.13rem; border-bottom: dashed 0.01rem #ccc; }
+.c_newDaShang .c_n_list .c_n_l_item { width: 1.7rem; float: left; margin-right: 0.28rem; margin-bottom: 0.2rem; height: 3.29rem; }
+.c_newDaShang .c_n_list .c_n_l_item:nth-child(6) { margin-right: 0; }
+.c_newDaShang .c_n_list .c_n_l_item .c_n_l_i_row1 { line-height: 0.18rem; font-size: 0.16rem; }
+.c_newDaShang .c_n_list .c_n_l_item .c_n_l_i_row1 i { width: 0.18rem; height: 0.18rem; text-align: center; background-color: #FF6600; float: left; color: #fff; margin-right: 0.06rem; border-radius: 0.03rem; }
+.c_newDaShang .c_n_list .c_n_l_item .c_n_l_i_row1 span { color: #666; float: left; }
+.c_newDaShang .c_n_list .c_n_l_item .c_n_l_i_row1 img { color: #666; float: left; border: none; margin: 0 0.03rem; width: 0.21rem; }
+.c_newDaShang .c_n_list .c_n_l_item .c_n_l_i_row1 a { float: left; color: #FF6147; overflow: hidden; max-width: 0.7rem; height: 0.2rem; white-space: nowrap; text-overflow: ellipsis; }
+.c_newDaShang .c_n_list .c_n_l_item:first-child .c_n_l_i_row1 a { max-width: 0.8rem; }
+.c_newDaShang .c_n_list .c_n_l_item .c_n_l_i_novelImg { box-shadow: 0 0 0.1rem #e7e7e7; margin-top: 0.15rem; height: 2.37rem; border-radius: 0.08rem; position: relative; }
+.c_newDaShang .c_n_list .c_n_l_item .c_n_l_i_novelImg .c_n_l_i_n_img { border: solid 0.04rem #fff; width: 1.62rem; border-radius: 0.08rem; }
+.c_newDaShang .c_n_list .c_n_l_item .c_n_l_i_novelImg .img_zhizui { width: 0.85rem; position: absolute; top: -0.17rem; right: -0.28rem; }
+.c_newDaShang .c_n_list .c_n_l_item .c_n_l_i_novelName { height: 0.24rem; line-height: 0.24rem; text-align: center; text-align: center; margin-top: 0.06rem; font-size: 0.16rem; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.c_newDaShang .c_n_list .c_n_l_item .c_n_l_i_novelName img { width: 0.24rem; height: 0.24rem; border: none; vertical-align: middle; position: relative; top: -0.03rem; }
+.c_newDaShang .c_n_list .c_n_l_item .c_n_l_i_novelVip { color: #09843E; font-size: 0.14rem; text-align: center; margin-top: 0.03rem; height: 0.24rem; line-height: 0.24rem; }
+.c_newDaShang .c_n_list .c_n_l_item .c_n_l_i_novelVip i { font-size: 0.18rem; }
+
+
+/*推荐和喜欢*/
+.c_tAndL { margin-top: 0.2rem; min-height: 3.5rem; }
+.c_tAndL .c_tl_module { float: left; width: 5.4rem; margin-right: 0.8rem; margin-bottom: 0.2rem; }
+.c_tAndL .c_tl_module:nth-child(2) { margin-right: 0; }
+.c_tAndL .c_tl_moduleList { list-style-type: none; padding: 0; margin: 0; }
+.c_tAndL .c_tl_like { margin-right: 0px; }
+.c_tAndL .c_tl_moduleList li { float: left; width: 2.60rem; margin-top: 0.15rem; }
+.c_tAndL .c_tl_moduleList li:nth-child(2n-1) { margin-right: 0.15rem; margin-left: 0.05rem; }
+.c_tAndL .c_tl_moduleList li:nth-child(1), .c_tAndL .c_tl_moduleList li:nth-child(2) { margin-top: 0.1rem; }
+.c_tAndL .c_tl_moduleList li .c_tl_m_novelImg { width: 0.62rem; height: 0.83rem; float: left; box-shadow: 0 0 0.1rem #e7e7e7; border-radius: 0.06rem; }
+.c_tAndL .c_tl_moduleList li .c_tl_m_novelImg img { width: 0.56rem; border: solid 0.03rem #fff; border-radius: 0.06rem; }
+.c_tAndL .c_tl_moduleList li .c_tl_m_info { width: 1.925rem; float: right; }
+.c_tAndL .c_tl_moduleList li .c_tl_m_info .c_tl_m_i_name { font-size: 0.16rem; margin-top: 0.15rem; color: #666; line-height: 0.20rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.c_tAndL .c_tl_moduleList li .c_tl_m_info .c_tl_m_i_name i { float: left; width: 0.2rem; height: 0.2rem; background-color: #FF6600; color: #fff; margin-right: 0.05rem; text-align: center; border-radius: 0.04rem; }
+.c_tAndL .c_tl_moduleList li .c_tl_m_info .c_tl_m_i_name .c_tl_m_i_n_numhei { background-color: #000; }
+.c_tAndL .c_tl_moduleList li .c_tl_m_info .c_tl_m_i_dashang { font-size: 0.14rem; margin-top: 0.15rem; color: #999; height: 0.18rem; line-height: 0.18rem; }
+.c_tAndL .c_tl_moduleList li .c_tl_m_info .c_tl_m_i_dashang img { float: left; margin-right: 0.06rem; width: 0.18rem; }
+
+/*评论区*/
+.C-Fo-Z-Shuping { width: auto; }
+.C-Fo-Z-Shuping-PL { width: auto; }
+.XuxianDiv { border-bottom: 0.01rem dashed #d9d9d9; }
+.litem { border-bottom: 1px solid #e5e5e5; }
+
+
+.taoShu { height: 0.55rem; overflow: hidden; }
+
+/**在手机端要隐藏的样式**/
+.mobileHidden { display: block; }
+.mobileShow { display: none; }
+
+/*----------------------------------右键弹窗----------------------------------*/
+.rightWindow { width: 1.6rem; height: 4rem; position: fixed; top: 10%; left: 40%; display: none; background: url(//s.faloo.com/novel2/rightwindow/bg.jpg) no-repeat center center; background-size: 100% 100%; box-shadow: 0 0 0.1rem #89A294; }
+.rightWindow ul { list-style-type: none; padding: 0; width: 90%; margin: 0.11rem auto auto; }
+.rightWindow ul li { height: 0.36rem; line-height: 0.36rem; border-bottom: dashed 0.01rem #A6BAAE; }
+.rightWindow ul li:hover { background:rgba(158,182,168,0.2);}
+.rightWindow ul li a:hover div { color:#FF6600; }
+.rightWindow ul li a:hover .icon1 {background-image: url(//s.faloo.com/novel2/rightwindow/icon1a.png) }
+.rightWindow ul li a:hover .icon2  {background-image: url(//s.faloo.com/novel2/rightwindow/icon2a.png) }
+.rightWindow ul li a:hover .icon3  {background-image: url(//s.faloo.com/novel2/rightwindow/icon3a.png) }
+.rightWindow ul li a:hover .icon4  {background-image: url(//s.faloo.com/novel2/rightwindow/icon4a.png) }
+.rightWindow ul li a:hover .icon5  {background-image: url(//s.faloo.com/novel2/rightwindow/icon5a.png) }
+.rightWindow ul li a:hover .icon6  {background-image: url(//s.faloo.com/novel2/rightwindow/icon6a.png) }
+.rightWindow ul li a:hover .icon7  {background-image: url(//s.faloo.com/novel2/rightwindow/icon7a.png) }
+.rightWindow ul li a:hover .icon8  {background-image: url(//s.faloo.com/novel2/rightwindow/icon8a.png) }
+.rightWindow ul li a:hover .icon9  {background-image: url(//s.faloo.com/novel2/rightwindow/icon9a.png) }
+.rightWindow ul li a:hover .icon10 {background-image: url(//s.faloo.com/novel2/rightwindow/icon10a.png) }
+.rightWindow ul > li  div { font-size: 0.16rem; color: #333333; padding-left: 0.24rem; margin: 0 auto; width: 0.74rem; }
+.rightWindow .icon1 { background: url(//s.faloo.com/novel2/rightwindow/icon1.png) no-repeat left 0.06rem center; background-size: 0.09rem 0.14rem; }
+.rightWindow .icon2 { background: url(//s.faloo.com/novel2/rightwindow/icon2.png) no-repeat left 0.06rem center; background-size: 0.09rem 0.14rem; }
+.rightWindow .icon3 { background: url(//s.faloo.com/novel2/rightwindow/icon3.png) no-repeat left 0.04rem center; background-size: 0.13rem; }
+.rightWindow .icon4 { background: url(//s.faloo.com/novel2/rightwindow/icon4.png) no-repeat left 0.03rem center; background-size: 0.16rem; }
+.rightWindow .icon5 { background: url(//s.faloo.com/novel2/rightwindow/icon5.png) no-repeat left 0.02rem center; background-size: 0.17rem 0.15rem; }
+.rightWindow .icon6 { background: url(//s.faloo.com/novel2/rightwindow/icon6.png) no-repeat left 0.03rem center; background-size: 0.16rem 0.15rem; }
+.rightWindow .icon7 { background: url(//s.faloo.com/novel2/rightwindow/icon7.png) no-repeat left 0.03rem center; background-size: 0.15rem; }
+.rightWindow .icon8 { background: url(//s.faloo.com/novel2/rightwindow/icon8.png) no-repeat left 0.04rem center; background-size: 0.14rem; }
+.rightWindow .icon9 { background: url(//s.faloo.com/novel2/rightwindow/icon9.png) no-repeat left 0.03rem center; background-size: 0.16rem 0.18rem; }
+.rightWindow .icon10 { background: url(//s.faloo.com/novel2/rightwindow/icon10.png) no-repeat left 0.02rem center; background-size: 0.17rem 0.16rem; }
+
+/*----------------------------------右键弹窗end----------------------------------*/
+
+
+
+@media only screen and (min-width:1330px) and (max-width:1406px) {
+.setBox1 { left: 0.1rem; margin-left: 0; }
+}
+
+@media only screen and (max-width:1384px) {
+.setBox2 { right: 0.11rem; margin: 0; left: auto; }
+}
+
+@media only screen and (max-width:1330px) {
+/*登录模块隐藏*/
+.nr_top .t_b_right { width: auto; }
+.nr_top .t_b_center { width: auto; }
+.nr_top .t_b_right .t_b_r_item:nth-child(1), .nr_top .t_b_right .t_b_r_item:nth-child(2) { display: none; }
+
+.nt_btnFold { display: block; }
+.waterfall_xuanfu { display: block; }
+.nr_center .c_left .c_l_info .c_l_i_button { display: none; }
+.setBox .setWindow { left: -6.53rem; }
+.setBox { left: auto; position: absolute; right: 0.14rem; top: 0.67rem; }
+.setBox1Hide { display: none; }
+}
+
+@media only screen and (max-width:1200px) {
+/*.setBox { margin-left: -5.95rem; }
+.setBox2 { margin-left: 5.3rem; }*/
+}
+
+@media only screen and (max-width:1100px) {
+.bottom { display: none; }
+.readBg { min-width: 5.6rem !important; }
+}
+
+@media only screen and (max-width:960px) {
+.nr_top .t_b_center a:nth-child(6) { display: none; }
+}
+
+@media only screen and (max-width:910px) {
+.nr_center .c_left .c_l_info { padding-right: 1rem; }
+.nr_center .c_left .c_l_info .c_l_i_item { margin-right: 0rem; }
+}
+
+@media only screen and (max-width:830px) {
+.nr_top .t_b_center a:nth-child(5) { display: none; }
+}
+
+@media only screen and (max-width:750px) {
+.nr_top .t_b_center a:nth-child(4) { display: none; }
+}
+
+
+@media only screen and (min-width:570px) and (max-width:8000px) {
+}
+
+@media only screen and (min-width:400px) and (max-width:835px) {
+.nr_center .c_left .noveContent .c_c4 .c_c4_item .c_c4_i_l { width: 100%; }
+}
+
+@media only screen and (max-width:560px) {
+/*body { width: 5.6rem; background-size: 5.6rem !important; }*/
+.nr_center .c_left { width: 540px; padding: 0; }
+.XhDiv { width: 5.6rem; }
+.c_newDaShang .c_n_list .c_n_l_item { margin-right: 0.1rem; }
+.moduleTitle .c_t_btnall { margin-right: 0.1rem; }
+/*.setBox{margin:0; left:0;}*/
+.nr_center .c_left .c_l_info .c_l_i_item { margin-right: 0.1rem; }
+.nr_center .c_left .c_l_info { padding-right: 1.2rem; }
+.dialogWindow { width: 5.4rem; margin-left: -2.7rem; }
+
+.setBox .setWindow { left: -4.78rem; width: 4.23rem; }
+.setBox .setWindow .ss_bcolor li { margin-right: 0.18rem; }
+.setBox .setWindow .ss_bcolor li:first-child, .setBox .setWindow .ss_fontset li:first-child, .setBox .setWindow .ss_fontColorset li:first-child { width: 4.23rem; height: 0.35rem; line-height: 0.35rem; }
+.setBox .setWindow .ss_readline { display: none; }
+.setBox .setWindow { height: 5.6rem; }
+.nr_top .t_b_center a { margin-left: 0.1rem; }
+.dialogWindow { width: 5.4rem !important; margin-left: -2.7rem !important; }
+.c_l_i_hide { display: none; }
+.nr_top .t_b_left { width: auto; }
+.nr_top .t_b_left img { width: 1.3rem; height: auto; }
+
+.mobileHidden { display: none !important; }
+.mobileShow { display: block; }
+}
+
+@media only screen and (min-width:8000px) {
+html { font-size: 2790%; }
+}

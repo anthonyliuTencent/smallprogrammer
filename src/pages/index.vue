@@ -97,6 +97,7 @@ import {
 import router from '../router'
 import { searchCgi, getRecordBook } from '../assets/api'
 import Foot from '../components/foot.vue'
+import '../../static/css/pc.css'
 Vue.use(Button)
   .use(NoticeBar)
   .use(ContactCard)

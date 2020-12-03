@@ -1,301 +1,315 @@
 .VueCarousel-navigation-button[data-v-453ad8cd] {
-    position: absolute;
-    top: 50%;
-    box-sizing: border-box;
-    color: #000;
-    text-decoration: none;
-    appearance: none;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    cursor: pointer;
-    outline: none;
+  position: absolute;
+  top: 50%;
+  box-sizing: border-box;
+  color: #000;
+  text-decoration: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+.VueCarousel-navigation-button[data-v-453ad8cd]:focus {
+  outline: 1px solid lightblue;
+}
+.VueCarousel-navigation-next[data-v-453ad8cd] {
+  right: 0;
+  transform: translateY(-50%) translateX(100%);
+  font-family: "system";
+}
+.VueCarousel-navigation-prev[data-v-453ad8cd] {
+  left: 0;
+  transform: translateY(-50%) translateX(-100%);
+  font-family: "system";
+}
+.VueCarousel-navigation--disabled[data-v-453ad8cd] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Define the "system" font family */
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"),
+    local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Symbol"),
+    local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+</style > <style type="text/css" > .VueCarousel-pagination[data-v-438fd353] {
+  width: 100%;
+  text-align: center;
+}
+.VueCarousel-pagination--top-overlay[data-v-438fd353] {
+  position: absolute;
+  top: 0;
+}
+.VueCarousel-pagination--bottom-overlay[data-v-438fd353] {
+  position: absolute;
+  bottom: 0;
+}
+.VueCarousel-dot-container[data-v-438fd353] {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+}
+.VueCarousel-dot[data-v-438fd353] {
+  display: inline-block;
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  background-clip: content-box;
+  box-sizing: content-box;
+  padding: 0;
+  border-radius: 100%;
+  outline: none;
+}
+.VueCarousel-dot[data-v-438fd353]:focus {
+  outline: 1px solid lightblue;
+}
+</style > <style type="text/css" > .VueCarousel-slide {
+  flex-basis: inherit;
+  flex-grow: 0;
+  flex-shrink: 0;
+  user-select: none;
+  backface-visibility: hidden;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+.VueCarousel-slide-adjustableHeight {
+  display: table;
+  flex-basis: auto;
+  width: 100%;
+}
+</style > <style type="text/css" > .VueCarousel {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.VueCarousel--reverse {
+  flex-direction: column-reverse;
+}
+.VueCarousel-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.VueCarousel-inner {
+  display: flex;
+  flex-direction: row;
+  backface-visibility: hidden;
+}
+.VueCarousel-inner--center {
+  justify-content: center;
+}
+
+.comicl {
+  position: absolute;
+  left: -1000px;
+}
+.coverlogo {
+  width: 100px;
+}
+
+.search {
+  position: relative;
+  display: inline-block;
+  padding: 16px 8px 16px 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+.search-wrap {
+  position: relative;
+  display: block;
+  height: 32px;
+  width: 308px;
+  padding-right: 48px;
+}
+
+.search-input {
+  display: block;
+  height: 32px;
+  width: 100%;
+  margin: 0;
+  padding: 0 10px;
+  outline: none;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffb5c3;
+  background-color: #fff4f4;
+  border: 1px solid #ffd1d8;
+  border-width: 1px 0 1px 1px;
+  -webkit-border-radius: 16px 0 0 16px;
+  -moz-border-radius: 16px 0 0 16px;
+  border-radius: 16px 0 0 16px;
+}
+
+.ift-search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 32px;
+  width: 48px;
+  padding-right: 4px;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #fc6976;
+  -webkit-border-radius: 0 16px 16px 0;
+  -moz-border-radius: 0 16px 16px 0;
+  border-radius: 0 16px 16px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-inner {
+  display: block;
+  position: absolute;
+  z-index: 102;
+  left: 0;
+  top: 52px;
+  height: auto;
+  width: 264px;
+  padding: 36px 8px 0;
+  padding-top: 38px;
+  background: url(//resource.mhxk.com/kanman_pc/static/images/comm/bg-cat-main.png)
+    no-repeat top;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
+  font-weight: bold;
+}
+
+.search-inner-main {
+  padding: 8px 0;
+  border: 1px solid #ffb5c3;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 4px 0 #ffd1d8 inset;
+  -moz-box-shadow: 0 1px 4px 0 #ffd1d8 inset;
+  box-shadow: inset 0 1px 4px 0 #ffd1d8;
+}
+.search-hot {
+  padding: 0 20px;
+}
+
+.search-no-info {
+  text-align: center;
+}
+.search-list {
+  padding: 0;
+}
+
+.item-text {
+  position: relative;
+  display: block;
+  height: 24px;
+  /* padding: 4px 16px 0 44px; */
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  .content[data-v-5ed13355] {
+    min-width: inherit;
+    min-height: inherit;
   }
-  .VueCarousel-navigation-button[data-v-453ad8cd]:focus {
-    outline: 1px solid lightblue;
+  .phonebg[data-v-5ed13355] {
+    left: -44px;
+    margin-top: -50px;
+    transform: scale(0.6) translate(0, 30px);
   }
-  .VueCarousel-navigation-next[data-v-453ad8cd] {
-    right: 0;
-    transform: translateY(-50%) translateX(100%);
-    font-family: "system";
+  .logocont {
+    width: 100vw;
   }
-  .VueCarousel-navigation-prev[data-v-453ad8cd] {
-    left: 0;
-    transform: translateY(-50%) translateX(-100%);
-    font-family: "system";
+  .text[data-v-5ed13355] {
+    /*top: 430px;*/
+    /*left: -70px;*/
+    /*transform: scale(0.4);*/
+    top: 425px;
+    left: 20vw;
+    width: 60vw;
+    height: 5vw;
+    opacity: 0;
   }
-  .VueCarousel-navigation--disabled[data-v-453ad8cd] {
-    opacity: 0.5;
-    cursor: default;
+  .qrcode {
+    /*transform: scale(0.6);*/
+    /*left: -206px;*/
+    top: 454px;
+    width: 100vw;
   }
-  
-  /* Define the "system" font family */
-  @font-face {
-    font-family: system;
-    font-style: normal;
-    font-weight: 300;
-    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"),
-      local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Symbol"),
-      local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+  #bbg {
+    margin-left: 100px;
+    width: 300px;
+    margin-top: -100px;
   }
-  </style><style type="text/css">
-  .VueCarousel-pagination[data-v-438fd353] {
-    width: 100%;
-    text-align: center;
+  .footer {
+    display: none;
   }
-  .VueCarousel-pagination--top-overlay[data-v-438fd353] {
-    position: absolute;
-    top: 0;
+  #main {
+    margin-top: -80px;
   }
-  .VueCarousel-pagination--bottom-overlay[data-v-438fd353] {
-    position: absolute;
-    bottom: 0;
+  .qrcode img {
+    width: 130px;
+    height: 130px;
   }
-  .VueCarousel-dot-container[data-v-438fd353] {
-    display: inline-block;
-    margin: 0 auto;
-    padding: 0;
+  .qrcode p {
+    font-size: 12px;
   }
-  .VueCarousel-dot[data-v-438fd353] {
-    display: inline-block;
-    cursor: pointer;
-    appearance: none;
-    border: none;
-    background-clip: content-box;
-    box-sizing: content-box;
-    padding: 0;
-    border-radius: 100%;
-    outline: none;
-  }
-  .VueCarousel-dot[data-v-438fd353]:focus {
-    outline: 1px solid lightblue;
-  }
-  </style><style type="text/css">
-  .VueCarousel-slide {
-    flex-basis: inherit;
-    flex-grow: 0;
-    flex-shrink: 0;
-    user-select: none;
-    backface-visibility: hidden;
-    -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    outline: none;
-  }
-  .VueCarousel-slide-adjustableHeight {
-    display: table;
-    flex-basis: auto;
-    width: 100%;
-  }
-  </style><style type="text/css">
-  .VueCarousel {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .VueCarousel--reverse {
-    flex-direction: column-reverse;
-  }
-  .VueCarousel-wrapper {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-  }
-  .VueCarousel-inner {
-    display: flex;
-    flex-direction: row;
-    backface-visibility: hidden;
-  }
-  .VueCarousel-inner--center {
-    justify-content: center;
-  }
-  
-  .comicl {
-    position: absolute;
-    left: -1000px;
-  }
-  .coverlogo {
-    width: 100px;
-  }
-  
-  .search {
-    position: relative;
-    display: inline-block;
-    padding: 16px 8px 16px 0;
-    vertical-align: top;
-    text-align: left;
-  }
-  
-  .search-wrap {
-    position: relative;
-    display: block;
-    height: 32px;
-    width: 308px;
-    padding-right: 48px;
-  }
-  
-  .search-input {
-    display: block;
-    height: 32px;
-    width: 100%;
-    margin: 0;
-    padding: 0 10px;
-    outline: none;
+  #word {
+    margin-bottom: 10px;
     font-size: 16px;
-    line-height: 32px;
-    color: #FFB5C3;
-    background-color: #FFF4F4;
-    border: 1px solid #FFD1D8;
-    border-width: 1px 0 1px 1px;
-    -webkit-border-radius: 16px 0 0 16px;
-    -moz-border-radius: 16px 0 0 16px;
-    border-radius: 16px 0 0 16px;
+    margin-top: -30px;
   }
-  
-  .ift-search {
+
+  .search {
     position: absolute;
+    margin-left: 50vw;
+    transform: translate(-50%, 0%);
+  }
+
+  .header-logo {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .phonebg[data-v-5ed13355] {
+    transform: scale(1.2, 1.08);
+    left: 300px;
+  }
+  .text[data-v-5ed13355] {
+    width: 550px;
+    height: 46px;
+    top: 127px;
+  }
+  .qrcode {
+    top: 235px;
     right: 0;
-    top: 0;
-    display: block;
-    height: 32px;
-    width: 48px;
-    padding-right: 4px;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #fc6976;
-    -webkit-border-radius: 0 16px 16px 0;
-    -moz-border-radius: 0 16px 16px 0;
-    border-radius: 0 16px 16px 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-  
-  .search-inner {
-    display: block;position: absolute;z-index: 102;left: 0;top: 52px;height: auto;width: 264px;padding: 36px 8px 0;padding-top: 38px;background: url(//resource.mhxk.com/kanman_pc/static/images/comm/bg-cat-main.png) no-repeat top;-webkit-background-size: 100% auto;-moz-background-size: 100% auto;background-size: 100% auto;
-    font-weight: bold;
+  .qrcode img {
+    width: 200px;
+    height: 200px;
   }
-  
-  .search-inner-main {
-    padding: 8px 0;
-    border: 1px solid #FFB5C3;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    -webkit-box-shadow: 0 1px 4px 0 #FFD1D8 inset;
-    -moz-box-shadow: 0 1px 4px 0 #FFD1D8 inset;
-    box-shadow: inset 0 1px 4px 0 #FFD1D8;
+  #bbg {
+    width: 400px;
   }
-  .search-hot {
-    padding: 0 20px;
+  #word {
+    margin-bottom: 30px;
+    font-size: 20px;
+    margin-top: -20px;
   }
-  
-  .search-no-info {
-    text-align: center;
-  }
-  .search-list {
-    padding: 0;
-  }
-  
-  .item-text {
-    position: relative;
-    display: block;
-    height: 24px;
-    /* padding: 4px 16px 0 44px; */
-    margin-bottom: 4px;
-    font-size: 14px;
-    line-height: 20px;
-    color: #666666;
-    text-decoration: none;
-  }
-  
-  @media screen and (max-width: 500px) {
-      .content[data-v-5ed13355] {
-          min-width: inherit;
-          min-height: inherit;
-      }
-      .phonebg[data-v-5ed13355] {
-          left: -44px;
-          margin-top: -50px;
-          transform: scale(0.6) translate(0,30px);
-      }
-      .logocont {
-          width: 100vw;
-      }
-      .text[data-v-5ed13355] {
-          /*top: 430px;*/
-          /*left: -70px;*/
-          /*transform: scale(0.4);*/
-          top: 425px;
-          left: 20vw;
-          width: 60vw;
-          height: 5vw;
-          opacity: 0;
-      }
-      .qrcode {
-          /*transform: scale(0.6);*/
-          /*left: -206px;*/
-          top: 454px;
-          width: 100vw;
-      }
-      #bbg {
-          margin-left: 100px;
-          width: 300px;
-          margin-top: -100px;
-      }
-      .footer {
-          display: none;
-      }
-      #main {
-          margin-top: -80px;
-      }
-      .qrcode img {
-          width: 130px;
-          height: 130px;
-      }
-      .qrcode p {
-          font-size: 12px;
-      }
-      #word {
-        margin-bottom: 10px; font-size: 16px; margin-top: -30px;
-      }
-  
-      .search {
-        position: absolute;
-        margin-left: 50vw;
-        transform: translate(-50%, 0%);
-      }
-  
-      .header-logo {
-        visibility: hidden;
-      }
-  }
-  
-  @media screen and (min-width: 500px) {
-      .phonebg[data-v-5ed13355] {
-          transform: scale(1.2,1.08);
-          left: 300px;
-      }
-      .text[data-v-5ed13355] {
-          width: 550px;
-          height: 46px;
-          top: 127px;
-      }
-      .qrcode {
-          top: 235px;
-          right: 0;
-      }
-      .qrcode img {
-          width: 200px;
-          height: 200px;
-      }
-      #bbg {
-          width: 400px;
-      }
-      #word {
-        margin-bottom: 30px; font-size: 20px; margin-top: -20px;
-      }
-  }
+}

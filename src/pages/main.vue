@@ -283,7 +283,6 @@ import {
 import Vue from 'vue';
 import router from '../router';
 import { getBookDetail } from '../assets/api';
-import axios from 'axios';
 Vue.use(Button)
   .use(NoticeBar)
   .use(ContactCard)
@@ -306,9 +305,7 @@ export default {
   },
   async mounted() {
     const bookId = this.$route.query.book_id;
-    console.log('data is:', data);
     const { data } = await getBookDetail(bookId);
-    console.log('data is:', data);
     this.bookInfo = {
       category: data.book_category,
       name: data.book_name,

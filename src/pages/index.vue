@@ -20,13 +20,13 @@
     <van-icon name="close" @click="onClear"/>
   </template>
   </van-search>
-        <van-swipe :autoplay="3000" style="width: 260px;
+        <van-swipe :autoplay="3000" style="width: 259px;
     height: 540px;
     position: absolute;
-    left: 100px;
-    top: 140px;">
-        <van-swipe-item style="width:260px;height:540px;" v-for="(image, index) in images" :key="index">
-            <img v-lazy="image" style="width:260px;height:500px;" />
+    left: 90px;
+    top: 145px;">
+        <van-swipe-item style="width:259px;height:540px;" v-for="(image, index) in images" :key="index">
+            <img v-lazy="image" style="width:259px;height:500px;" />
         </van-swipe-item>
         </van-swipe>
     </div>

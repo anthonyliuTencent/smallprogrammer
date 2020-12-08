@@ -59,7 +59,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist/pc'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/pc',
 
     /**
      * Source Maps
@@ -89,7 +89,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist/mm'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/mm',
 
     /**
      * Source Maps

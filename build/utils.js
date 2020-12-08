@@ -109,18 +109,22 @@ exports.entries = function() {
   var entryFiles = glob.sync("./src/views/**/main.js");
   var map = {};
   entryFiles.forEach(filePath => {
-    const chunk = filePath.split("./src/views/")[1].split("./main.js")[0];
+    const chunk = filePath.split("./src/views/")[1].split("/main.js")[0];
     map[chunk] = filePath;
   });
   return map;
 };
 exports.getHtmlConfig = function() {
-  let entryHtml = glob.sync("./src/views/**/index.html");
+  let entryHtml = glob.sync("./src/views/**/index.html")
   var assetsPathPath, assetsSubDirectory, cdnDomain;
   if (process.env.NODE_ENV === "production") {
     assetsPathPath = config.build.assetsPublicPath;
     assetsSubDirectory = config.build.assetsSubDirectory;
     cdnDomain = config.build.cdnDomain;
+  } else {
+    assetsPathPath = config.dev.assetsPublicPath;
+    assetsSubDirectory = config.dev.assetsSubDirectory;
+    cdnDomain = config.dev.cdnDomain;
   }
   let arr = [];
   var data = JSON.stringify({
@@ -145,8 +149,8 @@ exports.getHtmlConfig = function() {
         },
         chunksSortMode: "dependency"
       });
-      arr.push(new HtmlWebpackPlugin(conf));
     }
+    arr.push(new HtmlWebpackPlugin(conf));
   });
   return arr;
 };

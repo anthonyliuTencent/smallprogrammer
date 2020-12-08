@@ -1,9 +1,9 @@
 <template>
-  <div id="bgvid1" >
+  <div>
     <div class="wrapper" style="height:  90vh;"></div>
-    <!-- <div style=" position: absolute;
+    <div style=" position: absolute;
     top: 12px;
-  background-image: url('../../static/image/iphone.png');
+  background-image: url('../../../static/image/iphone.png');
   margin-right: auto;
   margin-left: auto;
   background-size: contain;
@@ -17,16 +17,16 @@
             <img v-lazy="image" style="width: 7.75rem;height: 16.245rem" />
         </van-swipe-item>
         </van-swipe>
-    </div> -->
+    </div>
     <div
       class="qrcode"
       style="position: absolute; overflow: visible; text-align: center; color: white; font-size: 15px; font-weight: bold;"
     >
-      <div id="word" style="font-size: 20px;">海量热门小说,超快更新,全部免费！</div>
+      <div id="word" style="font-size: 20px;">海量热门小说,超快更新,全部免费！asdasd</div>
       <div style=" display: flex;justify-content: center;">
         <div>
           <img style="width: 150px;height: 150px;"
-            src="../../static/image/programm.jpg"
+            src="../../../static/image/programm.jpg"
             alt="小雷看书小程序"
           />
           <p style="font-size: 17px;">小程序扫码搜索直接看</p>
@@ -40,14 +40,15 @@ import {
   Button,
   Swipe,
   SwipeItem,
-  Divider
+  Divider,
+  Lazyload
 } from 'vant';
 import Vue from 'vue';
 Vue.use(Button)
-
   .use(Swipe)
   .use(SwipeItem)
-  .use(Divider);
+  .use(Divider)
+  .use(Lazyload);
 export default {
   name: 'App',
   data() {
@@ -68,7 +69,6 @@ export default {
 </script>
 <style>
 #app {
-
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -79,7 +79,7 @@ export default {
 }
 .wrapper {
   background-position: -10rem 0rem;
-  background-image: url("../../static/image/girl.png");
+  background-image: url("../../../static/image/girl.png");
 
   margin-right: auto;
   margin-left: auto;

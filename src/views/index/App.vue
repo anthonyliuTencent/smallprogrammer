@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="wrapper" style="height:  90vh;"></div>
+    <div class="wrapper" style="height:  100vh;"></div>
     <div style=" position: absolute;
     top: 12px;
   background-image: url('../../../static/image/iphone.png');
@@ -22,14 +22,14 @@
       class="qrcode"
       style="position: absolute; overflow: visible; text-align: center; color: white; font-size: 15px; font-weight: bold;"
     >
-      <div id="word" style="font-size: 20px;">海量热门小说,超快更新,全部免费！asdasd</div>
+      <div id="word" style="font-size: 20px;color:#000000">海量热门小说,超快更新,全部免费！</div>
       <div style=" display: flex;justify-content: center;">
         <div>
           <img style="width: 150px;height: 150px;"
             src="../../../static/image/programm.jpg"
             alt="小雷看书小程序"
           />
-          <p style="font-size: 17px;">小程序扫码搜索直接看</p>
+          <p style="font-size: 17px;color:#000000">扫码直接看</p>
         </div>
       </div>
     </div>

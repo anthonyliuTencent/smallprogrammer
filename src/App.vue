@@ -1,7 +1,6 @@
 <template>
   <div>
-    <router-view v-if="showPage == 1" name="m"></router-view>
-    <router-view v-else :name="path"></router-view>
+    <router-view :name="path"></router-view>
   </div>
 </template>
 
@@ -9,7 +8,7 @@
 export default {
   data() {
     return {
-      path: 'pc'
+      path: ''
     }
   },
   methods: {
@@ -23,11 +22,9 @@ export default {
 
   created() {
     if (this._isMobile()) {
-      this.showPage = 1;
+      this.path = 'm';
     } else {
       this.path = 'pc'
-      console.log('this:', this.$router.currentRoute)
-      this.showPage = 2;
     }
   }
 };

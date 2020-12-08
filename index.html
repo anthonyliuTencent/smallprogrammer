@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <head>
   <meta charset="utf-8"><meta http-equiv="x-dns-prefetch-control" content="on"><meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
     <link rel="shortcut icon" href="https://mydear.site/static/image/time.jpeg" type="image/x-icon">
@@ -18,6 +19,19 @@
 
     <title>小雷看书 - 免费小说,圣墟,诡秘之主,大奉打更人,我师兄实在太稳健了,斗罗大陆、斗破苍穹、剑来、完美世界  - 小雷看书官网</title>
     <link rel="stylesheet" href="./static/css/home.css">
+    <script>
+      function _isMobile() {
+        let flag = navigator.userAgent.match(
+          /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+        );
+        return flag;
+      }
+      if(_isMobile()) {
+        // console.log('navigator.userAgent is:', navigator.userAgent)
+        window.location.href = "https://m.mydear.site"
+      }
+    </script>
+    </head>
     <body>
     <div id="app"></div>
   </body>

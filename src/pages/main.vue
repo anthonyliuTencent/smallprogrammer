@@ -257,9 +257,8 @@
       </div></van-popup>
     <div class="bottom" style="height:auto">
       <div class="bottomTop">
-      <p>小雷看书网声明</p>
+      <p>小雷看书网声明：</p>
       <p>为营造健康的网络环境，小雷看书坚决抵制淫秽色情，涉黑(暴力、血腥)等违反国家规定的小说在网站上传播，如发现违规作品，请向本站投诉。</p>
-      <p>本网站为网友写作提供上传空间存储平台，请上传有合法版权的作品，如发现本站有侵犯权利人版权内容的，请向本站投诉。</p>
       </div>
       <!-- <div class="bottomBtom"></div> -->
     </div>
@@ -335,4 +334,6 @@ export default {
 };
 // vant.Toast('提示');
 </script>
-<style scoped></style>
+<style scoped>
+
+</style>

@@ -1,7 +1,7 @@
 <template>
   <div class="box" id="pc-pages">
-    <div class="wrapper" style="height:750px"></div>
-    <div class="iphone" style="width: 525px;height: 743px;top:16px;margin-left: -30px;">
+    <div class="wrapper" style="height:720px"></div>
+    <div class="iphone" style="width: 525px; background-repeat: no-repeat;height: 704px;;top:16px;margin-left: -30px;">
         <van-search
     v-model="value"
     background="#e66465"
@@ -26,15 +26,15 @@
     left: 100px;
     top: 140px;">
         <van-swipe-item style="width:260px;height:540px;" v-for="(image, index) in images" :key="index">
-            <img v-lazy="image" style="width:260px;height:540px;" />
+            <img v-lazy="image" style="width:260px;height:500px;" />
         </van-swipe-item>
         </van-swipe>
     </div>
     <div
       class="qrcode"
-      style="position: absolute; overflow: visible; top:16px; text-align: center; color: white; font-size: 15px; font-weight: bold;"
+      style="position: absolute; overflow: visible; text-align: center; color: white; font-size: 15px; font-weight: bold;"
     >
-      <div id="word" style="margin-top:20px;">海量热门小说,超快更新,全部免费！</div>
+      <div id="word" style="margin-top:30px;">海量热门小说,超快更新,全部免费！</div>
       <div style=" display: flex;justify-content: center;">
         <div style="margin-left: 30px;">
           <img

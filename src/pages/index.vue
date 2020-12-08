@@ -151,7 +151,7 @@ export default {
     },
     goTo (bookId) {
       console.log('bookId is:', bookId)
-      router.push({ path: 'main', query: {book_id: bookId} })
+      router.push({ path: '/main', query: {book_id: bookId} })
     },
     onFocus () {
       this.show = true

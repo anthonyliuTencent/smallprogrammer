@@ -9,15 +9,22 @@ export default new VueRouter({
   mode: 'history',
   routes: [
     {
-      path: '/pc/main',
-      components: Main
+      path: '/main',
+      name: 'main',
+      component: Main
+      // components: {
+      //   Main
+      // }
     },
     {
-      path: '/pc/content',
-      components: Content
+      path: '/content',
+      name: 'content',
+      component: Content
     }, {
-      path: '/pc',
-      components: Index
+      path: '/',
+      name: 'pc',
+      component: Index
+      // components: {Index}
     }
   ]
 });

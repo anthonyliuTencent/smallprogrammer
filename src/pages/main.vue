@@ -322,7 +322,7 @@ export default {
   methods: {
     goTo(bookId, chapterId) {
       console.log('bookId is:', bookId)
-      router.push({ path: 'content', query: {book_id: bookId, chapter_id: chapterId, total: this.bookInfo.total} })
+      router.push({ path: '/content', query: {book_id: bookId, chapter_id: chapterId, total: this.bookInfo.total} })
     },
     showWx() {
       this.show = true

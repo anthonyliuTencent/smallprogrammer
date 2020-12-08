@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div> hello world! </div>
-    <router-view :name="pc"></router-view>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -9,7 +8,7 @@
 export default {
   data() {
     return {
-      path: 'pc'
+      path: 'Main'
     }
   },
   methods: {

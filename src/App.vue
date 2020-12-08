@@ -1,7 +1,7 @@
 <template>
   <div>
     <div> hello world! </div>
-    <router-view :name="path"></router-view>
+    <router-view :name="pc"></router-view>
   </div>
 </template>
 

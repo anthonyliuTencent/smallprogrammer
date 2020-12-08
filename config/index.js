@@ -57,7 +57,7 @@ module.exports = {
     index: path.resolve(__dirname, '../dist/pc/index.html'),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../dist/pc/'),
+    assetsRoot: path.resolve(__dirname, '../dist/pc'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '',
 

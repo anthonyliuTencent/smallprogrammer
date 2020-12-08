@@ -119,11 +119,11 @@ export default {
       noData: false,
       bookArray: [],
       images: [
-        '/static/image/wechat1.jpeg',
-        '/static/image/wechat2.jpeg',
-        '/static/image/wechat3.jpeg',
-        '/static/image/wechat4.jpeg',
-        '/static/image/wechat5.jpeg'
+        '../../static/image/wechat1.jpeg',
+        '../../static/image/wechat2.jpeg',
+        '../../static/image/wechat3.jpeg',
+        '../../static/image/wechat4.jpeg',
+        '../../static/image/wechat5.jpeg'
       ]
     };
   },

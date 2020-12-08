@@ -58,7 +58,7 @@ module.exports = {
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist/pc'),
-    assetsSubDirectory: 'pc/static',
+    assetsSubDirectory: 'static',
     assetsPublicPath: '/pc',
 
     /**
@@ -88,7 +88,7 @@ module.exports = {
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist/mm'),
-    assetsSubDirectory: 'mm/static',
+    assetsSubDirectory: 'static',
     assetsPublicPath: '/mm',
 
     /**

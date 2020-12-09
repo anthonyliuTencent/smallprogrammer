@@ -57,7 +57,7 @@
       </div>
       <div class="tips">
         <h2>
-          小雷看书网 https://mydear.site.com
+          小雷看书网 https://mydear.site
           欢迎广大书友光临阅读，最新、最快、最火的连载作品尽在小雷看书网！
         </h2>
       </div>

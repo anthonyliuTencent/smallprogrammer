@@ -241,7 +241,7 @@ export default {
     async getData() {
       let body = this.info
       const { data } = await getChapterContent(body.book_id, body.chapter_id)
-      this.content = data.content.replace(/\s+(.*?)\s+/g, function($1, $2) {
+      this.content = data.bookInfo.content.replace(/\s+(.*?)\s+/g, function($1, $2) {
         return '<p style=" margin-top: 10px;">' + $2 + '</p>'
       })
       this.info = {

@@ -247,7 +247,7 @@ export default {
       this.info = {
         ...this.info,
         name: data.bookInfo.book_name,
-        chapter_name: data..bookInfo.chapter_name
+        chapter_name: data.bookInfo.chapter_name
       }
     },
     goTo(flag) {
